@@ -15,7 +15,7 @@
 
     "author"     : "Rodolfo Ochoa <rodolfo.ochoa@oracle.com>",
 
-    "main"        : "kvclient-js",
+    "main"        : "kvclient",
 
     "dependencies": {
         "thrift": ">=0.9.1",
