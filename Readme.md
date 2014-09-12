@@ -12,8 +12,8 @@ KClient uses Thrift (https://thrift.apache.org/) protocol to connect to any KVSt
 a connection to a KVStore server, you must have a running instance of a Thrift Proxy. This package is capable of 
 starting an instance of this proxy by default, this Proxy requires you to have Java 7. 
 
-BASIC USAGE
------------
+EXAMPLE
+-------
 ```
 var kvClient = require('kvclient-js');
 var kvTypes = kvClient.Types;
@@ -39,7 +39,7 @@ store.open();
 DIRECTORY STRUCTURE
 -------------------
 <dl compact>
- <dt> documentation    <dd>      Documentation of the main API
+ <dt> documentation/   <dd>      API Reference
  <dt> examples/        <dd>      Sample code
  <dt> lib/             <dd>      The KVClient-js source code
  <dt> proxy/           <dd>      Required files to start a Thrift Proxy instance
@@ -53,14 +53,14 @@ To run the test cases included in the package, you need to have mocha installed,
 ```npm install mocha | sudo npm install -g mocha``` 
 
 then at package directory run the command:
-```mocha```
+```mocha ```
 
-Mocha automatically will look for test directory and try to run the tests.
+Mocha will automatically look for test directory and try to run the tests.
 
 
 DOCUMENTATION
 -------------
-For a reference of the package please go to ```documentation``` directory. 
+For a reference of the package please go to documentation directory. 
 
 FOR MORE INFORMATION
 --------------------
