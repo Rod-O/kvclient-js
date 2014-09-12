@@ -1,0 +1,765 @@
+[2014-09-10 17:18:58.138] [INFO]  New Store instance
+[2014-09-10 17:18:58.155] [INFO]  Store open
+[2014-09-10 17:18:58.156] [DEBUG] Attempt to open: 1
+[2014-09-10 17:18:58.156] [INFO]  Setting client
+[2014-09-10 17:18:58.156] [DEBUG] Set kvClient to Proxy: localhost:9090
+[2014-09-10 17:18:58.163] [DEBUG] Error on thrift ConnectionError: connect ECONNREFUSED
+[2014-09-10 17:18:58.163] [INFO]  [PROXY] Start proxy
+[2014-09-10 17:18:58.164] [DEBUG] Check on Java
+[2014-09-10 17:18:58.248] [DEBUG] [PROXY] Launch proxy cmd: java  -Dlog4j.configuration=/media/sf_dev/proxy/kvclient-js/proxy/log4j.ini -cp /media/sf_dev/proxy/kvclient-js/proxy/proxyServer.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/libthrift-0.9.1.jar:/home/rod/wdev/kv/kvstore/dist/lib/kvstore.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-log4j12-1.5.8.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/log4j-1.2.14.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-api-1.5.8.jar com.oracle.ondb.proxy.ProxyServer  -port 9090 &
+[2014-09-10 17:21:45.771] [INFO]  New Store instance
+[2014-09-10 17:21:45.788] [INFO]  Store open
+[2014-09-10 17:21:45.788] [DEBUG] Attempt to open: 1
+[2014-09-10 17:21:45.788] [INFO]  Setting client
+[2014-09-10 17:21:45.788] [DEBUG] Set kvClient to Proxy: localhost:9090
+[2014-09-10 17:21:45.799] [DEBUG] Thrift Connection successful
+[2014-09-10 17:21:45.802] [DEBUG] Starting verify process
+[2014-09-10 17:21:45.906] [DEBUG] Store connected to proxy
+[2014-09-10 17:21:46.776] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:46.801] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:46.879] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-10 17:21:47.000] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.008] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.070] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.125] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.176] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.234] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.325] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.377] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.432] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.524] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.585] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.705] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.758] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.808] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.873] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.943] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:47.987] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.058] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.101] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.187] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.242] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.330] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.387] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.439] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.513] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.541] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.643] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.686] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.744] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.810] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.885] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.964] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:48.998] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:49.084] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:49.160] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:49.251] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:49.472] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:49.566] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:49.683] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:49.850] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:49.908] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:49.995] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.029] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.080] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.124] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.179] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.285] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.302] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.357] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.414] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.443] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.500] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.580] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.600] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.663] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.783] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.841] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:50.935] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:51.010] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:51.096] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:51.179] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:51.231] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:51.316] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:51.399] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:51.457] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:51.525] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:51.601] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:51.678] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:51.784] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:51.835] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:51.915] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:51.979] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.030] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.074] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.121] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.161] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.213] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.254] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.305] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.352] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.401] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.455] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.518] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.565] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.628] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.697] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.748] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.798] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.870] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.884] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:52.968] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.024] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.100] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.137] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.227] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.273] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.326] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.374] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.444] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.500] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.576] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.631] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.726] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.754] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.840] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.863] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.926] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:53.971] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:54.080] [DEBUG] Return from putIfAbsent with err:null
+[2014-09-10 17:21:54.222] [DEBUG] Return from putIfPresent with err:null
+[2014-09-10 17:21:54.415] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:54.540] [DEBUG] Return from putIfVersion with err:TProxyException: null
+[2014-09-10 17:21:54.627] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:54.735] [DEBUG] Return from put with err:null
+[2014-09-10 17:21:54.995] [DEBUG] Return from put with err:TRequestTimeoutException: Request dispatcher: c-7343072775296010931, dispatch timed out after 0 retries. Target: not available (12.1.3.0.15) Timeout: 200ms
+[2014-09-11 17:41:50.832] [INFO]  New Store instance
+[2014-09-11 17:41:50.881] [INFO]  Store open
+[2014-09-11 17:41:50.882] [DEBUG] Attempt to open: 1
+[2014-09-11 17:41:50.882] [INFO]  Setting client
+[2014-09-11 17:41:50.882] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 17:41:50.909] [DEBUG] Error on thrift ConnectionError: connect ECONNREFUSED
+[2014-09-11 17:41:50.909] [INFO]  [PROXY] Start proxy
+[2014-09-11 17:41:50.910] [DEBUG] Check on Java
+[2014-09-11 17:41:51.082] [DEBUG] Host flag for proxy:  -hosts localhost:5000
+[2014-09-11 17:41:51.083] [DEBUG] [PROXY] Launch proxy cmd: java  -Dlog4j.configuration=/media/sf_dev/proxy/kvclient-js/proxy/log4j.ini -cp /media/sf_dev/proxy/kvclient-js/proxy/proxyServer.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/libthrift-0.9.1.jar:/home/rod/wdev/kv/kvstore/dist/lib/kvstore.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-log4j12-1.5.8.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/log4j-1.2.14.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-api-1.5.8.jar com.oracle.ondb.proxy.ProxyServer  -hosts localhost:5000 -port 5010 -store kvstore &
+[2014-09-11 17:57:29.765] [INFO]  New Store instance
+[2014-09-11 17:57:29.789] [INFO]  Store open
+[2014-09-11 17:57:29.789] [DEBUG] Attempt to open: 1
+[2014-09-11 17:57:29.789] [INFO]  Setting client
+[2014-09-11 17:57:29.789] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 17:57:29.797] [DEBUG] Error on thrift ConnectionError: connect ECONNREFUSED
+[2014-09-11 17:57:29.798] [INFO]  [PROXY] Start proxy
+[2014-09-11 17:57:29.798] [DEBUG] Check on Java
+[2014-09-11 17:57:29.930] [DEBUG] Host flag for proxy:  -hosts localhost:5000
+[2014-09-11 17:57:29.931] [DEBUG] [PROXY] Launch proxy cmd: java  -Dlog4j.configuration=/media/sf_dev/proxy/kvclient-js/proxy/log4j.ini -cp /media/sf_dev/proxy/kvclient-js/proxy/proxyServer.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/libthrift-0.9.1.jar:/home/rod/wdev/kv/kvstore/dist/lib/kvstore.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-log4j12-1.5.8.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/log4j-1.2.14.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-api-1.5.8.jar com.oracle.ondb.proxy.ProxyServer  -hosts localhost:5000 -port 5010 -store kvstore &
+[2014-09-11 17:57:29.945] [DEBUG] [PROXY] Proxy launched with pid:14871
+
+[2014-09-11 17:57:30.148] [DEBUG] [PROXY] error:  null
+[2014-09-11 17:57:30.148] [DEBUG] [PROXY] stdout: 
+[2014-09-11 17:57:30.149] [DEBUG] [PROXY] stderr: Unknown argument: -hosts
+
+[2014-09-11 17:57:31.151] [DEBUG] [PROXY] Error setting up the proxy
+[2014-09-11 17:57:31.151] [INFO]  Store open
+[2014-09-11 17:57:31.152] [DEBUG] Attempt to open: 2
+[2014-09-11 17:57:31.152] [INFO]  Setting client
+[2014-09-11 17:57:31.153] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 17:57:31.160] [DEBUG] Error on thrift ConnectionError: connect ECONNREFUSED
+[2014-09-11 17:57:31.161] [INFO]  [PROXY] Start proxy
+[2014-09-11 17:57:31.162] [DEBUG] Check on Java
+[2014-09-11 17:57:31.284] [DEBUG] Host flag for proxy:  -hosts localhost:5000
+[2014-09-11 17:57:31.284] [DEBUG] [PROXY] Launch proxy cmd: java  -Dlog4j.configuration=/media/sf_dev/proxy/kvclient-js/proxy/log4j.ini -cp /media/sf_dev/proxy/kvclient-js/proxy/proxyServer.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/libthrift-0.9.1.jar:/home/rod/wdev/kv/kvstore/dist/lib/kvstore.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-log4j12-1.5.8.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/log4j-1.2.14.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-api-1.5.8.jar com.oracle.ondb.proxy.ProxyServer  -hosts localhost:5000 -port 5010 -store kvstore &
+[2014-09-11 17:57:31.296] [DEBUG] [PROXY] Proxy launched with pid:14894
+
+[2014-09-11 17:57:31.485] [DEBUG] [PROXY] error:  null
+[2014-09-11 17:57:31.486] [DEBUG] [PROXY] stdout: 
+[2014-09-11 17:57:31.486] [DEBUG] [PROXY] stderr: Unknown argument: -hosts
+
+[2014-09-11 17:57:32.487] [DEBUG] [PROXY] Error setting up the proxy
+[2014-09-11 17:57:32.488] [INFO]  Store open
+[2014-09-11 17:57:32.488] [DEBUG] Attempt to open: 3
+[2014-09-11 17:57:32.488] [INFO]  Setting client
+[2014-09-11 17:57:32.489] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 17:57:32.492] [DEBUG] Error on thrift ConnectionError: connect ECONNREFUSED
+[2014-09-11 17:57:32.493] [INFO]  [PROXY] Start proxy
+[2014-09-11 17:57:32.493] [DEBUG] Check on Java
+[2014-09-11 17:57:32.609] [DEBUG] Host flag for proxy:  -hosts localhost:5000
+[2014-09-11 17:57:32.610] [DEBUG] [PROXY] Launch proxy cmd: java  -Dlog4j.configuration=/media/sf_dev/proxy/kvclient-js/proxy/log4j.ini -cp /media/sf_dev/proxy/kvclient-js/proxy/proxyServer.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/libthrift-0.9.1.jar:/home/rod/wdev/kv/kvstore/dist/lib/kvstore.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-log4j12-1.5.8.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/log4j-1.2.14.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-api-1.5.8.jar com.oracle.ondb.proxy.ProxyServer  -hosts localhost:5000 -port 5010 -store kvstore &
+[2014-09-11 17:57:32.620] [DEBUG] [PROXY] Proxy launched with pid:14917
+
+[2014-09-11 17:57:32.808] [DEBUG] [PROXY] error:  null
+[2014-09-11 17:57:32.808] [DEBUG] [PROXY] stdout: 
+[2014-09-11 17:57:32.808] [DEBUG] [PROXY] stderr: Unknown argument: -hosts
+
+[2014-09-11 17:57:33.810] [DEBUG] [PROXY] Error setting up the proxy
+[2014-09-11 17:57:33.810] [INFO]  Store open
+[2014-09-11 17:57:33.811] [DEBUG] Attempt to open: 4
+[2014-09-11 17:57:33.811] [INFO]  Setting client
+[2014-09-11 17:57:33.811] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 17:57:33.813] [DEBUG] Error on thrift ConnectionError: connect ECONNREFUSED
+[2014-09-11 17:57:33.813] [DEBUG] Check on Java
+[2014-09-11 17:57:33.813] [INFO]  [PROXY] Start proxy
+[2014-09-11 17:57:33.953] [DEBUG] Host flag for proxy:  -hosts localhost:5000
+[2014-09-11 17:57:33.953] [DEBUG] [PROXY] Launch proxy cmd: java  -Dlog4j.configuration=/media/sf_dev/proxy/kvclient-js/proxy/log4j.ini -cp /media/sf_dev/proxy/kvclient-js/proxy/proxyServer.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/libthrift-0.9.1.jar:/home/rod/wdev/kv/kvstore/dist/lib/kvstore.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-log4j12-1.5.8.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/log4j-1.2.14.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-api-1.5.8.jar com.oracle.ondb.proxy.ProxyServer  -hosts localhost:5000 -port 5010 -store kvstore &
+[2014-09-11 17:57:33.964] [DEBUG] [PROXY] Proxy launched with pid:14940
+
+[2014-09-11 17:57:34.155] [DEBUG] [PROXY] error:  null
+[2014-09-11 17:57:34.155] [DEBUG] [PROXY] stdout: 
+[2014-09-11 17:57:34.155] [DEBUG] [PROXY] stderr: Unknown argument: -hosts
+
+[2014-09-11 17:57:35.156] [DEBUG] [PROXY] Error setting up the proxy
+[2014-09-11 17:57:35.157] [INFO]  Store open
+[2014-09-11 17:57:35.157] [DEBUG] Attempt to open: 5
+[2014-09-11 17:57:35.157] [INFO]  Setting client
+[2014-09-11 17:57:35.158] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 17:57:35.163] [DEBUG] Error on thrift ConnectionError: connect ECONNREFUSED
+[2014-09-11 17:57:35.163] [INFO]  [PROXY] Start proxy
+[2014-09-11 17:57:35.164] [DEBUG] Check on Java
+[2014-09-11 17:57:35.282] [DEBUG] Host flag for proxy:  -hosts localhost:5000
+[2014-09-11 17:57:35.282] [DEBUG] [PROXY] Launch proxy cmd: java  -Dlog4j.configuration=/media/sf_dev/proxy/kvclient-js/proxy/log4j.ini -cp /media/sf_dev/proxy/kvclient-js/proxy/proxyServer.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/libthrift-0.9.1.jar:/home/rod/wdev/kv/kvstore/dist/lib/kvstore.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-log4j12-1.5.8.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/log4j-1.2.14.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-api-1.5.8.jar com.oracle.ondb.proxy.ProxyServer  -hosts localhost:5000 -port 5010 -store kvstore &
+[2014-09-11 17:57:35.295] [DEBUG] [PROXY] Proxy launched with pid:14964
+
+[2014-09-11 17:57:35.485] [DEBUG] [PROXY] error:  null
+[2014-09-11 17:57:35.485] [DEBUG] [PROXY] stdout: 
+[2014-09-11 17:57:35.485] [DEBUG] [PROXY] stderr: Unknown argument: -hosts
+
+[2014-09-11 17:57:36.487] [DEBUG] [PROXY] Error setting up the proxy
+[2014-09-11 17:57:36.487] [INFO]  Store open
+[2014-09-11 17:57:36.487] [DEBUG] Attempt to open: 6
+[2014-09-11 17:57:36.489] [INFO]  Setting client
+[2014-09-11 17:57:36.489] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 17:57:36.494] [DEBUG] Error on thrift ConnectionError: connect ECONNREFUSED
+[2014-09-11 17:57:36.495] [INFO]  [PROXY] Start proxy
+[2014-09-11 17:57:36.495] [DEBUG] Check on Java
+[2014-09-11 17:57:36.614] [DEBUG] Host flag for proxy:  -hosts localhost:5000
+[2014-09-11 17:57:36.614] [DEBUG] [PROXY] Launch proxy cmd: java  -Dlog4j.configuration=/media/sf_dev/proxy/kvclient-js/proxy/log4j.ini -cp /media/sf_dev/proxy/kvclient-js/proxy/proxyServer.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/libthrift-0.9.1.jar:/home/rod/wdev/kv/kvstore/dist/lib/kvstore.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-log4j12-1.5.8.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/log4j-1.2.14.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-api-1.5.8.jar com.oracle.ondb.proxy.ProxyServer  -hosts localhost:5000 -port 5010 -store kvstore &
+[2014-09-11 17:57:36.632] [DEBUG] [PROXY] Proxy launched with pid:14987
+
+[2014-09-11 17:57:36.830] [DEBUG] [PROXY] error:  null
+[2014-09-11 17:57:36.830] [DEBUG] [PROXY] stdout: 
+[2014-09-11 17:57:36.830] [DEBUG] [PROXY] stderr: Unknown argument: -hosts
+
+[2014-09-11 17:57:37.831] [DEBUG] [PROXY] Error setting up the proxy
+[2014-09-11 17:57:37.831] [INFO]  Store open
+[2014-09-11 17:57:37.831] [DEBUG] Attempt to open: 7
+[2014-09-11 17:57:37.831] [INFO]  Setting client
+[2014-09-11 17:57:37.831] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 17:57:37.838] [DEBUG] Error on thrift ConnectionError: connect ECONNREFUSED
+[2014-09-11 17:57:37.839] [INFO]  [PROXY] Start proxy
+[2014-09-11 17:57:37.839] [DEBUG] Check on Java
+[2014-09-11 17:57:37.957] [DEBUG] Host flag for proxy:  -hosts localhost:5000
+[2014-09-11 17:57:37.957] [DEBUG] [PROXY] Launch proxy cmd: java  -Dlog4j.configuration=/media/sf_dev/proxy/kvclient-js/proxy/log4j.ini -cp /media/sf_dev/proxy/kvclient-js/proxy/proxyServer.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/libthrift-0.9.1.jar:/home/rod/wdev/kv/kvstore/dist/lib/kvstore.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-log4j12-1.5.8.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/log4j-1.2.14.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-api-1.5.8.jar com.oracle.ondb.proxy.ProxyServer  -hosts localhost:5000 -port 5010 -store kvstore &
+[2014-09-11 17:57:37.970] [DEBUG] [PROXY] Proxy launched with pid:15011
+
+[2014-09-11 17:57:38.175] [DEBUG] [PROXY] error:  null
+[2014-09-11 17:57:38.175] [DEBUG] [PROXY] stdout: 
+[2014-09-11 17:57:38.175] [DEBUG] [PROXY] stderr: Unknown argument: -hosts
+
+[2014-09-11 17:57:39.176] [DEBUG] [PROXY] Error setting up the proxy
+[2014-09-11 17:57:39.177] [INFO]  Store open
+[2014-09-11 17:57:39.177] [DEBUG] Attempt to open: 8
+[2014-09-11 17:57:39.177] [INFO]  Setting client
+[2014-09-11 17:57:39.177] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 17:57:39.182] [DEBUG] Error on thrift ConnectionError: connect ECONNREFUSED
+[2014-09-11 17:57:39.182] [INFO]  [PROXY] Start proxy
+[2014-09-11 17:57:39.182] [DEBUG] Check on Java
+[2014-09-11 17:57:39.323] [DEBUG] [PROXY] Launch proxy cmd: java  -Dlog4j.configuration=/media/sf_dev/proxy/kvclient-js/proxy/log4j.ini -cp /media/sf_dev/proxy/kvclient-js/proxy/proxyServer.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/libthrift-0.9.1.jar:/home/rod/wdev/kv/kvstore/dist/lib/kvstore.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-log4j12-1.5.8.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/log4j-1.2.14.jar:/media/sf_dev/proxy/kvclient-js/proxy/lib/slf4j-api-1.5.8.jar com.oracle.ondb.proxy.ProxyServer  -hosts localhost:5000 -port 5010 -store kvstore &
+[2014-09-11 17:57:39.323] [DEBUG] Host flag for proxy:  -hosts localhost:5000
+[2014-09-11 17:57:39.337] [DEBUG] [PROXY] Proxy launched with pid:15034
+
+[2014-09-11 17:57:39.576] [DEBUG] [PROXY] error:  null
+[2014-09-11 17:57:39.576] [DEBUG] [PROXY] stdout: 
+[2014-09-11 17:57:39.576] [DEBUG] [PROXY] stderr: Unknown argument: -hosts
+
+[2014-09-11 18:02:08.935] [INFO]  New Store instance
+[2014-09-11 18:02:08.965] [INFO]  Store open
+[2014-09-11 18:02:08.967] [DEBUG] Attempt to open: 1
+[2014-09-11 18:02:08.967] [INFO]  Setting client
+[2014-09-11 18:02:08.967] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 18:02:08.979] [DEBUG] Thrift Connection successful
+[2014-09-11 18:02:08.979] [DEBUG] Starting verify process
+[2014-09-11 18:02:09.190] [DEBUG] Store connected to proxy
+[2014-09-11 18:02:10.582] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:10.813] [DEBUG] Return from put with err:TIllegalArgumentException: Invalid length for FixedBinary array, it must be 10, and it is 10801
+[2014-09-11 18:02:10.917] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 18:02:11.063] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.118] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.185] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.213] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.293] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.343] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.415] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.475] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.529] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.579] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.680] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.736] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.786] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.857] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.928] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:11.994] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:12.046] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:12.107] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:12.193] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:12.285] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:12.338] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:12.433] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:12.526] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:12.544] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:12.632] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:12.700] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:12.738] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:12.791] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:12.905] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:12.928] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:13.048] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:13.099] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:13.152] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:13.233] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:13.284] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:13.378] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:13.492] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:13.520] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:13.608] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:13.694] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:13.798] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:13.878] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:13.963] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.011] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.066] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.156] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.249] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.285] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.336] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.400] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.449] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.493] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.567] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.629] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.718] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.782] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.848] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:14.951] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:15.037] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:15.126] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:15.217] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:15.270] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:15.343] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:15.381] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:15.471] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:15.570] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:15.642] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:15.718] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:15.814] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:15.901] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:15.983] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.069] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.159] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.203] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.253] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.315] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.366] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.466] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.516] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.534] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.584] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.632] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.740] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.762] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.833] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.895] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.930] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:16.989] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:17.075] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:17.134] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:17.221] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:17.291] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:17.345] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:17.443] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:17.492] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:17.583] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:17.627] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:17.674] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:17.739] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:17.817] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:17.914] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:17.978] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:18.053] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:18.109] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:18.187] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:18.247] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:18.341] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:18.396] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:18.544] [DEBUG] Return from putIfAbsent with err:null
+[2014-09-11 18:02:18.699] [DEBUG] Return from putIfPresent with err:null
+[2014-09-11 18:02:18.895] [DEBUG] Return from put with err:null
+[2014-09-11 18:02:19.133] [DEBUG] Return from putIfVersion with err:TProxyException: null
+[2014-09-11 21:09:33.754] [INFO]  New Store instance
+[2014-09-11 21:09:33.776] [INFO]  Store open
+[2014-09-11 21:09:33.776] [DEBUG] Attempt to open: 1
+[2014-09-11 21:09:33.776] [INFO]  Setting client
+[2014-09-11 21:09:33.777] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:09:33.784] [DEBUG] Thrift Connection successful
+[2014-09-11 21:09:33.784] [DEBUG] Starting verify process
+[2014-09-11 21:09:33.794] [DEBUG] Store connected to proxy
+[2014-09-11 21:09:33.876] [DEBUG] Return from put with err:TIllegalArgumentException: Failed to parse JSON input: Failed to decode VALUE_STRING as base64 (MIME-NO-LINEFEEDS): Illegal character '"' (code 0x22) in base64 content
+ at [Source: java.io.ByteArrayInputStream@6453123; line: 1, column: 14501]
+[2014-09-11 21:09:33.962] [DEBUG] Return from put with err:TIllegalArgumentException: Failed to parse JSON input: Failed to decode VALUE_STRING as base64 (MIME-NO-LINEFEEDS): Illegal character '"' (code 0x22) in base64 content
+ at [Source: java.io.ByteArrayInputStream@3cdcb012; line: 1, column: 14501]
+[2014-09-11 21:09:33.992] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.149] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.161] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.172] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.213] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.246] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.278] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.308] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.342] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.379] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.415] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.450] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.495] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.523] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.536] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.573] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.599] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.655] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.677] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.708] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.769] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.803] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.825] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.911] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:34.970] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.045] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.080] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.137] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.206] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.261] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.345] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.402] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.454] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.480] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.568] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.610] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.682] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.704] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.773] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.803] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.845] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.879] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.914] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.927] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:35.973] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.010] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.036] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.138] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.178] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.221] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.290] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.323] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.387] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.537] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.553] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.628] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.689] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.704] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.784] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.844] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.898] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.926] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:36.974] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.059] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.077] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.133] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.247] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.266] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.315] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.382] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.438] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.476] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.521] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.552] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.603] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.691] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.749] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.794] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.874] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.917] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.944] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:37.994] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.068] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.077] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.126] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.238] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.266] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.325] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.386] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.438] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.503] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.556] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.583] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.647] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.712] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.747] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.792] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.840] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:38.935] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:39.005] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:39.073] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:39.093] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:39.168] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:39.186] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:39.270] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:39.286] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:39.394] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:39.417] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:39.458] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:09:39.523] [DEBUG] Return from putIfAbsent with err:TIllegalArgumentException: Failed to parse JSON input: Failed to decode VALUE_STRING as base64 (MIME-NO-LINEFEEDS): Illegal character '"' (code 0x22) in base64 content
+ at [Source: java.io.ByteArrayInputStream@46a2cbf2; line: 1, column: 14501]
+[2014-09-11 21:09:39.627] [DEBUG] Return from putIfPresent with err:TIllegalArgumentException: Failed to parse JSON input: Failed to decode VALUE_STRING as base64 (MIME-NO-LINEFEEDS): Illegal character '"' (code 0x22) in base64 content
+ at [Source: java.io.ByteArrayInputStream@62ed3a; line: 1, column: 14501]
+[2014-09-11 21:09:39.686] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:11:36.267] [INFO]  New Store instance
+[2014-09-11 21:11:36.322] [INFO]  Store open
+[2014-09-11 21:11:36.324] [DEBUG] Attempt to open: 1
+[2014-09-11 21:11:36.330] [INFO]  Setting client
+[2014-09-11 21:11:36.331] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:11:36.345] [DEBUG] Thrift Connection successful
+[2014-09-11 21:11:36.346] [DEBUG] Starting verify process
+[2014-09-11 21:11:36.428] [DEBUG] Store connected to proxy
+[2014-09-11 21:11:36.495] [DEBUG] Return from put with err:TIllegalArgumentException: Failed to parse JSON input: Failed to decode VALUE_STRING as base64 (MIME-NO-LINEFEEDS): Illegal character '"' (code 0x22) in base64 content
+ at [Source: java.io.ByteArrayInputStream@2ed50eb9; line: 1, column: 14501]
+[2014-09-11 21:11:48.448] [INFO]  New Store instance
+[2014-09-11 21:11:48.495] [INFO]  Store open
+[2014-09-11 21:11:48.496] [DEBUG] Attempt to open: 1
+[2014-09-11 21:11:48.496] [INFO]  Setting client
+[2014-09-11 21:11:48.497] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:11:48.513] [DEBUG] Thrift Connection successful
+[2014-09-11 21:11:48.517] [DEBUG] Starting verify process
+[2014-09-11 21:11:48.535] [DEBUG] Store connected to proxy
+[2014-09-11 21:11:48.654] [DEBUG] Return from put with err:TIllegalArgumentException: Failed to parse JSON input: Failed to decode VALUE_STRING as base64 (MIME-NO-LINEFEEDS): Illegal character '"' (code 0x22) in base64 content
+ at [Source: java.io.ByteArrayInputStream@335b3e8c; line: 1, column: 14501]
+[2014-09-11 21:14:58.356] [INFO]  New Store instance
+[2014-09-11 21:14:58.389] [INFO]  Store open
+[2014-09-11 21:14:58.390] [DEBUG] Attempt to open: 1
+[2014-09-11 21:14:58.390] [INFO]  Setting client
+[2014-09-11 21:14:58.390] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:14:58.397] [DEBUG] Thrift Connection successful
+[2014-09-11 21:14:58.398] [DEBUG] Starting verify process
+[2014-09-11 21:14:58.408] [DEBUG] Store connected to proxy
+[2014-09-11 21:14:58.466] [DEBUG] Return from put with err:TIllegalArgumentException: Failed to parse JSON input: Failed to decode VALUE_STRING as base64 (MIME-NO-LINEFEEDS): Illegal character '"' (code 0x22) in base64 content
+ at [Source: java.io.ByteArrayInputStream@61eeb67c; line: 1, column: 88]
+[2014-09-11 21:15:29.167] [INFO]  New Store instance
+[2014-09-11 21:15:29.205] [INFO]  Store open
+[2014-09-11 21:15:29.206] [DEBUG] Attempt to open: 1
+[2014-09-11 21:15:29.207] [INFO]  Setting client
+[2014-09-11 21:15:29.207] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:15:29.219] [DEBUG] Thrift Connection successful
+[2014-09-11 21:15:29.222] [DEBUG] Starting verify process
+[2014-09-11 21:15:29.236] [DEBUG] Store connected to proxy
+[2014-09-11 21:15:29.353] [DEBUG] Return from put with err:TIllegalArgumentException: Illegal value for numeric field f: 1.2345. Expected FLOAT, is DOUBLE
+[2014-09-11 21:15:52.761] [INFO]  New Store instance
+[2014-09-11 21:15:52.807] [INFO]  Store open
+[2014-09-11 21:15:52.807] [DEBUG] Attempt to open: 1
+[2014-09-11 21:15:52.807] [INFO]  Setting client
+[2014-09-11 21:15:52.808] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:15:52.823] [DEBUG] Thrift Connection successful
+[2014-09-11 21:15:52.825] [DEBUG] Starting verify process
+[2014-09-11 21:15:52.836] [DEBUG] Store connected to proxy
+[2014-09-11 21:15:52.921] [DEBUG] Return from put with err:TIllegalArgumentException: Illegal value for numeric field f: 1.2345. Expected FLOAT, is DOUBLE
+[2014-09-11 21:17:01.250] [INFO]  New Store instance
+[2014-09-11 21:17:01.302] [INFO]  Store open
+[2014-09-11 21:17:01.303] [DEBUG] Attempt to open: 1
+[2014-09-11 21:17:01.304] [INFO]  Setting client
+[2014-09-11 21:17:01.304] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:17:01.312] [DEBUG] Thrift Connection successful
+[2014-09-11 21:17:01.314] [DEBUG] Starting verify process
+[2014-09-11 21:17:01.328] [DEBUG] Store connected to proxy
+[2014-09-11 21:17:01.410] [DEBUG] Return from put with err:TIllegalArgumentException: Illegal value for numeric field f: 1.234. Expected FLOAT, is DOUBLE
+[2014-09-11 21:17:05.632] [INFO]  New Store instance
+[2014-09-11 21:17:05.681] [INFO]  Store open
+[2014-09-11 21:17:05.682] [DEBUG] Attempt to open: 1
+[2014-09-11 21:17:05.682] [INFO]  Setting client
+[2014-09-11 21:17:05.683] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:17:05.695] [DEBUG] Thrift Connection successful
+[2014-09-11 21:17:05.696] [DEBUG] Starting verify process
+[2014-09-11 21:17:05.707] [DEBUG] Store connected to proxy
+[2014-09-11 21:17:05.774] [DEBUG] Return from put with err:TIllegalArgumentException: Illegal value for numeric field f: 1.2. Expected FLOAT, is DOUBLE
+[2014-09-11 21:17:58.672] [INFO]  New Store instance
+[2014-09-11 21:17:58.707] [INFO]  Store open
+[2014-09-11 21:17:58.707] [DEBUG] Attempt to open: 1
+[2014-09-11 21:17:58.708] [INFO]  Setting client
+[2014-09-11 21:17:58.708] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:17:58.715] [DEBUG] Thrift Connection successful
+[2014-09-11 21:17:58.717] [DEBUG] Starting verify process
+[2014-09-11 21:17:58.727] [DEBUG] Store connected to proxy
+[2014-09-11 21:17:58.855] [DEBUG] Return from put with err:null
+[2014-09-11 21:18:03.835] [INFO]  New Store instance
+[2014-09-11 21:18:03.878] [INFO]  Store open
+[2014-09-11 21:18:03.879] [DEBUG] Attempt to open: 1
+[2014-09-11 21:18:03.879] [INFO]  Setting client
+[2014-09-11 21:18:03.879] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:18:03.888] [DEBUG] Thrift Connection successful
+[2014-09-11 21:18:03.889] [DEBUG] Starting verify process
+[2014-09-11 21:18:03.898] [DEBUG] Store connected to proxy
+[2014-09-11 21:18:03.937] [DEBUG] Return from put with err:TIllegalArgumentException: Illegal value for numeric field f: 1.1. Expected FLOAT, is DOUBLE
+[2014-09-11 21:18:27.299] [INFO]  New Store instance
+[2014-09-11 21:18:27.327] [INFO]  Store open
+[2014-09-11 21:18:27.328] [DEBUG] Attempt to open: 1
+[2014-09-11 21:18:27.328] [INFO]  Setting client
+[2014-09-11 21:18:27.329] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:18:27.336] [DEBUG] Thrift Connection successful
+[2014-09-11 21:18:27.337] [DEBUG] Starting verify process
+[2014-09-11 21:18:27.347] [DEBUG] Store connected to proxy
+[2014-09-11 21:18:27.427] [DEBUG] Return from put with err:TIllegalArgumentException: Illegal value for numeric field f: 1.1. Expected FLOAT, is DOUBLE
+[2014-09-11 21:33:07.742] [INFO]  New Store instance
+[2014-09-11 21:33:07.840] [INFO]  Store open
+[2014-09-11 21:33:07.841] [DEBUG] Attempt to open: 1
+[2014-09-11 21:33:07.841] [INFO]  Setting client
+[2014-09-11 21:33:07.842] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:33:07.859] [DEBUG] Thrift Connection successful
+[2014-09-11 21:33:07.860] [DEBUG] Starting verify process
+[2014-09-11 21:33:07.883] [DEBUG] Store connected to proxy
+[2014-09-11 21:33:08.027] [DEBUG] Return from put with err:null
+[2014-09-11 21:33:15.096] [INFO]  New Store instance
+[2014-09-11 21:33:15.163] [INFO]  Store open
+[2014-09-11 21:33:15.164] [DEBUG] Attempt to open: 1
+[2014-09-11 21:33:15.164] [INFO]  Setting client
+[2014-09-11 21:33:15.165] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:33:15.173] [DEBUG] Thrift Connection successful
+[2014-09-11 21:33:15.174] [DEBUG] Starting verify process
+[2014-09-11 21:33:15.243] [DEBUG] Store connected to proxy
+[2014-09-11 21:33:15.358] [DEBUG] Return from put with err:null
+[2014-09-11 21:34:02.515] [INFO]  New Store instance
+[2014-09-11 21:34:02.562] [INFO]  Store open
+[2014-09-11 21:34:02.563] [DEBUG] Attempt to open: 1
+[2014-09-11 21:34:02.563] [INFO]  Setting client
+[2014-09-11 21:34:02.565] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:34:02.578] [DEBUG] Thrift Connection successful
+[2014-09-11 21:34:02.579] [DEBUG] Starting verify process
+[2014-09-11 21:34:02.605] [DEBUG] Store connected to proxy
+[2014-09-11 21:34:02.739] [DEBUG] Return from put with err:null
+[2014-09-11 21:34:02.819] [DEBUG] Return from put with err:null
+[2014-09-11 21:34:02.859] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-11 21:34:20.064] [INFO]  New Store instance
+[2014-09-11 21:34:20.093] [INFO]  Store open
+[2014-09-11 21:34:20.094] [DEBUG] Attempt to open: 1
+[2014-09-11 21:34:20.094] [INFO]  Setting client
+[2014-09-11 21:34:20.095] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-11 21:34:20.104] [DEBUG] Thrift Connection successful
+[2014-09-11 21:34:20.105] [DEBUG] Starting verify process
+[2014-09-11 21:34:20.120] [DEBUG] Store connected to proxy
+[2014-09-11 21:34:20.227] [DEBUG] Return from put with err:null
+[2014-09-11 21:34:20.264] [DEBUG] Return from put with err:null
+[2014-09-11 21:34:20.314] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-12 11:34:53.631] [INFO]  New Store instance
+[2014-09-12 11:34:54.976] [INFO]  Store open
+[2014-09-12 11:34:54.977] [DEBUG] Attempt to open: 1
+[2014-09-12 11:34:54.977] [INFO]  Setting client
+[2014-09-12 11:34:54.977] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-12 11:34:55.007] [DEBUG] Thrift Connection successful
+[2014-09-12 11:34:55.008] [DEBUG] Starting verify process
+[2014-09-12 11:34:55.206] [DEBUG] Store connected to proxy
+[2014-09-12 11:34:56.595] [DEBUG] Return from put with err:null
+[2014-09-12 11:34:56.702] [DEBUG] Return from put with err:null
+[2014-09-12 11:34:56.829] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-12 11:41:27.853] [INFO]  New Store instance
+[2014-09-12 11:41:27.886] [INFO]  Store open
+[2014-09-12 11:41:27.887] [DEBUG] Attempt to open: 1
+[2014-09-12 11:41:27.887] [INFO]  Setting client
+[2014-09-12 11:41:27.888] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-12 11:41:27.903] [DEBUG] Thrift Connection successful
+[2014-09-12 11:41:27.905] [DEBUG] Starting verify process
+[2014-09-12 11:41:27.942] [DEBUG] Store connected to proxy
+[2014-09-12 11:41:28.119] [DEBUG] Return from put with err:null
+[2014-09-12 11:41:28.235] [DEBUG] Return from put with err:null
+[2014-09-12 11:41:28.305] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-12 11:41:33.280] [INFO]  New Store instance
+[2014-09-12 11:41:33.313] [INFO]  Store open
+[2014-09-12 11:41:33.314] [DEBUG] Attempt to open: 1
+[2014-09-12 11:41:33.314] [INFO]  Setting client
+[2014-09-12 11:41:33.315] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-12 11:41:33.325] [DEBUG] Thrift Connection successful
+[2014-09-12 11:41:33.326] [DEBUG] Starting verify process
+[2014-09-12 11:41:33.354] [DEBUG] Store connected to proxy
+[2014-09-12 11:41:33.493] [DEBUG] Return from put with err:null
+[2014-09-12 11:41:33.641] [DEBUG] Return from put with err:null
+[2014-09-12 11:41:33.699] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-12 11:41:38.193] [INFO]  New Store instance
+[2014-09-12 11:41:38.259] [INFO]  Store open
+[2014-09-12 11:41:38.260] [DEBUG] Attempt to open: 1
+[2014-09-12 11:41:38.260] [INFO]  Setting client
+[2014-09-12 11:41:38.263] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-12 11:41:38.279] [DEBUG] Thrift Connection successful
+[2014-09-12 11:41:38.282] [DEBUG] Starting verify process
+[2014-09-12 11:41:38.322] [DEBUG] Store connected to proxy
+[2014-09-12 11:41:38.414] [DEBUG] Return from put with err:null
+[2014-09-12 11:41:38.565] [DEBUG] Return from put with err:null
+[2014-09-12 11:41:38.643] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-12 11:41:42.814] [INFO]  New Store instance
+[2014-09-12 11:41:42.839] [INFO]  Store open
+[2014-09-12 11:41:42.841] [DEBUG] Attempt to open: 1
+[2014-09-12 11:41:42.841] [INFO]  Setting client
+[2014-09-12 11:41:42.841] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-12 11:41:42.855] [DEBUG] Thrift Connection successful
+[2014-09-12 11:41:42.865] [DEBUG] Starting verify process
+[2014-09-12 11:41:42.903] [DEBUG] Store connected to proxy
+[2014-09-12 11:41:43.025] [DEBUG] Return from put with err:null
+[2014-09-12 11:41:43.115] [DEBUG] Return from put with err:null
+[2014-09-12 11:41:43.171] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-12 11:41:47.547] [INFO]  New Store instance
+[2014-09-12 11:41:47.589] [INFO]  Store open
+[2014-09-12 11:41:47.590] [DEBUG] Attempt to open: 1
+[2014-09-12 11:41:47.590] [INFO]  Setting client
+[2014-09-12 11:41:47.590] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-12 11:41:47.606] [DEBUG] Thrift Connection successful
+[2014-09-12 11:41:47.609] [DEBUG] Starting verify process
+[2014-09-12 11:41:47.671] [DEBUG] Store connected to proxy
+[2014-09-12 11:41:47.774] [DEBUG] Return from put with err:null
+[2014-09-12 11:41:47.904] [DEBUG] Return from put with err:null
+[2014-09-12 11:41:47.959] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-12 11:42:38.527] [INFO]  New Store instance
+[2014-09-12 11:42:38.552] [INFO]  Store open
+[2014-09-12 11:42:38.552] [DEBUG] Attempt to open: 1
+[2014-09-12 11:42:38.552] [INFO]  Setting client
+[2014-09-12 11:42:38.553] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-12 11:42:38.560] [DEBUG] Thrift Connection successful
+[2014-09-12 11:42:38.560] [DEBUG] Starting verify process
+[2014-09-12 11:42:38.592] [DEBUG] Store connected to proxy
+[2014-09-12 11:42:38.741] [DEBUG] Return from put with err:null
+[2014-09-12 11:42:38.884] [DEBUG] Return from put with err:null
+[2014-09-12 11:42:38.940] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-12 11:42:48.352] [INFO]  New Store instance
+[2014-09-12 11:42:48.376] [INFO]  Store open
+[2014-09-12 11:42:48.377] [DEBUG] Attempt to open: 1
+[2014-09-12 11:42:48.377] [INFO]  Setting client
+[2014-09-12 11:42:48.378] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-12 11:42:48.388] [DEBUG] Thrift Connection successful
+[2014-09-12 11:42:48.389] [DEBUG] Starting verify process
+[2014-09-12 11:42:48.419] [DEBUG] Store connected to proxy
+[2014-09-12 11:42:48.602] [DEBUG] Return from put with err:null
+[2014-09-12 11:42:48.805] [DEBUG] Return from put with err:null
+[2014-09-12 11:42:48.982] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-12 11:43:03.629] [INFO]  New Store instance
+[2014-09-12 11:43:03.653] [INFO]  Store open
+[2014-09-12 11:43:03.654] [DEBUG] Attempt to open: 1
+[2014-09-12 11:43:03.655] [INFO]  Setting client
+[2014-09-12 11:43:03.656] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-12 11:43:03.664] [DEBUG] Thrift Connection successful
+[2014-09-12 11:43:03.665] [DEBUG] Starting verify process
+[2014-09-12 11:43:03.689] [DEBUG] Store connected to proxy
+[2014-09-12 11:43:03.800] [DEBUG] Return from put with err:TIllegalArgumentException: Illegal value for numeric field l: 12345678901234567000. Expected LONG, is BIG_INTEGER
+[2014-09-12 11:43:03.862] [DEBUG] Return from put with err:TIllegalArgumentException: Illegal value for numeric field l: 12345678901234567000. Expected LONG, is BIG_INTEGER
+[2014-09-12 11:43:03.942] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input
+[2014-09-12 12:09:01.199] [INFO]  New Store instance
+[2014-09-12 12:09:01.219] [INFO]  Store open
+[2014-09-12 12:09:01.220] [DEBUG] Attempt to open: 1
+[2014-09-12 12:09:01.220] [INFO]  Setting client
+[2014-09-12 12:09:01.220] [DEBUG] Set kvClient to Proxy: localhost:5010
+[2014-09-12 12:09:01.227] [DEBUG] Thrift Connection successful
+[2014-09-12 12:09:01.228] [DEBUG] Starting verify process
+[2014-09-12 12:09:01.238] [DEBUG] Store connected to proxy
+[2014-09-12 12:09:01.333] [DEBUG] Return from put with err:null
+[2014-09-12 12:09:01.411] [DEBUG] Return from put with err:null
+[2014-09-12 12:09:01.475] [DEBUG] Return from put with err:TIllegalArgumentException: No fields found, illegal or empty JSON input

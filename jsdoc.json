@@ -1,0 +1,11 @@
+{
+    "source": {
+        "include": [ "lib" ],
+        "includePattern": ".+\\.js(doc)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "plugins": [],
+    "opts": {
+        "destination": "documentation"
+    }
+}

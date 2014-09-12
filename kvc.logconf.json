@@ -1,0 +1,6 @@
+{
+    "logLevel": 7,
+    "logToFile": true,
+    "logFile": "log.txt",
+    "logToConsole": false
+}
