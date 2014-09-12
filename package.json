@@ -18,7 +18,10 @@
     "main"        : "kvclient-js",
 
     "dependencies": {
-        "thrift": ">=0.9.1"
+        "thrift": ">=0.9.1",
+        "node-int64": "~0.3.0",
+        "q": "1.0.x",
+        "nodeunit": "~0.8.0"
     },
     "devDependencies": {
         "mocha": "~1.6.3"
