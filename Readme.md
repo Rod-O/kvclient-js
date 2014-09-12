@@ -1,52 +1,66 @@
-# kvstore
-[![Build Status] (http://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/1876686.jpg)](http://www.oracle.com/technetwork/database/database-technologies/nosqldb/overview/index.html) ## KVClient API for node.js
-
+[![Build Status] (http://www.oracle.com/ocom/groups/public/@otn/documents/webcontent/1876686.jpg)](http://www.oracle.com/technetwork/database/database-technologies/nosqldb/overview/index.html)
+# KVClient API for node.js
 
 INTRODUCTION
 ------------
 The KVClient API for node.js provides a direct connection to any KVStore server. 
 
 
-Package directory structure
----------------------------
+REQUIREMENTS
+------------
+KClient uses Thrift (https://thrift.apache.org/) protocol to connect to any KVStore server, in order to establish 
+a connection to a KVStore server, you must have a running instance of a Thrift Proxy. This package is capable of 
+starting an instance of this proxy by default, this Proxy requires you to have Java 7. 
 
-The package has the following structure:
+BASIC USAGE
+-----------
+```
+var kvClient = require('kvclient-js');
+var kvTypes = kvClient.Types;
 
-documentation - the package documentation
-examples - some examples to see how the package works
-lib - the package code
-proxy - necessary jar files to start a local proxy
-test - KVClient test cases to be used with mocha
-Package files
+var configuration = new kvClient.Configuration();
+configuration.securityProperties.TRANSPORT = "SSL";
+configuration.startLocalProxy = true;
 
-The package contains the following files on their main directory:
+var store = kvClient.createStore(configuration);
+store.on('open', function () {
+    var primaryKey = {id:777};
+    var readOptions = kvClient.newReadOptions( kvTypes.Consistency.NONE_REQUIRED, 1000 );
+    store.get('table', primaryKey, readOptions, function(error, result) {
+        console.log(result);
+    });
+    store.close();
+});
 
-Changes.md - a log file with the relevant changes to the package
-jsdoc.json - configuration file to generate the documentation
-kvclient.js - the package main source file
-License - the License terms for this package
-package.json - the package descriptor for npm
-Readme.md - the Readme file with information about the package
-How to run test cases
+store.open();
+
+```
+
+DIRECTORY STRUCTURE
+-------------------
+<dl compact>
+ <dt> documentation    <dd>      Documentation of the main API
+ <dt> examples/        <dd>      Sample code
+ <dt> lib/             <dd>      The KVClient-js source code
+ <dt> proxy/           <dd>      Required files to start a Thrift Proxy instance
+ <dt> test/            <dd>      Test suite for mocha
+</dl>
 
 
 TESTING
 -------
+To run the test cases included in the package, you need to have mocha installed, to install mocha use:
+```npm install mocha | sudo npm install -g mocha``` 
 
-In order to run the test cases included in the package, you only need to be located at package directory and run the command:
+then at package directory run the command:
+```mocha```
 
-mocha
-mocha automatically will look for test directory and try to run the tests.
+Mocha automatically will look for test directory and try to run the tests.
 
 
 DOCUMENTATION
 -------------
-
-The package is shipped with documentation, but if you want to regenerate it, you only need to be located on package directory and run the following command:
-
-jsdoc -c jsdoc.json
-jsdoc automatically will create documentation directory and create/update the documentation.
-
+For a reference of the package please go to ```documentation``` directory. 
 
 FOR MORE INFORMATION
 --------------------
