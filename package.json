@@ -1,7 +1,7 @@
 {
     "name"        : "kvclient-js",
 
-    "version"     : "0.1.0",
+    "version"     : "0.1.1",
 
     "description" : "Oracle NoSQL Database node.js Client API.",
 
