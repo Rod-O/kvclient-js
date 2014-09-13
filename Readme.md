@@ -43,10 +43,10 @@ store.open();
 
 ## TESTING
 To test this package you will need to have on the database the test structure provided on:
-```test/db-config.ddl```
+```test/db-config.ddl ```
 
 To run the test cases included in the package you also need to have mocha installed, to install mocha use:
-```npm install mocha | sudo npm install -g mocha``` 
+```npm install mocha | sudo npm install -g mocha ``` 
 
 then at package directory run the command:
 ```mocha ```
