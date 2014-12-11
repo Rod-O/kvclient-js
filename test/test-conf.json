@@ -1,0 +1,20 @@
+{
+    "startProxy"         : true,
+    "host"               : "localhost:5010",
+    "KVCLIENT_JAR"       : "/media/sf_dev/kv/kvstore/dist/lib/kvclient.jar",
+    "PROXY_HOME"         : "/media/sf_dev/proxy/kvclient-js/proxy/",
+    "kvStoreName"        : "kvstore",
+    "kvStoreHelperHosts" : ["localhost:5000"],
+    "readZones"          : "",
+    "security" : {
+                            "TRANSPORT" : "ssl",
+                            "SSL_PROTOCOLS" : "TLSv1.2,TLSv1.1,TLSv1",
+                            "SSL_HOSTNAME_VERIFIER" : "dnmatch(CN\\=NoSQL)",
+                            "SSL_TRUSTSTORE_FILE" : "/security/client.trust",
+                            "AUTH_USERNAME" : "root",
+                            "AUTH_PWDFILE" : "/security/login.passwd"
+                            },
+    "requestTimeout"     : 1000,
+    "socketOpenTimeout"  : 1000,
+    "socketReadTimeout"  : 1000
+}

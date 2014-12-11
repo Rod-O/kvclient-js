@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: Configuration.js</title>
+    <title>JSDoc: Source: Logger.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: Configuration.js</h1>
+    <h1 class="page-title">Source: Logger.js</h1>
 
     
 
@@ -68,32 +68,132 @@
  * berkeleydb-info_us@oracle.com
  *
  */
-"use strict";
+"use strict"
 
-/*global kvLogger*/
-/*global Types*/
+/*global logConfiguration*/
 
-var Proxy  = require('./Proxy.js');
+var CONFIG_FILE = 'kvc.logconf.json';
 
-/**
- * Defines a set of configuration values used to connect to an Oracle NoSQL Database, this is just the constructor with
- * no parameters, once this object is created feel free to change any parameter.
- * @property {Consistency} defaultConsistency indicates the consistency used by default
- * @property {Durability} defaultDurability indicates the durability used by default
- * @property {Number} connectionAttempts the number of attempts to do when trying to connect to a server
- * @property {Proxy.ProxyConfiguration} proxyConfiguration the proxy configuration to connect to a server
- * @constructor
- */
-function Configuration () {
-    this.defaultConsistency   = Types.Consistency.ABSOLUTE;
-    this.defaultDurability    = new Types.Durability(Types.SyncPolicy.NO_SYNC, Types.ReplicaAckPolicy.ALL, Types.SyncPolicy.NO_SYNC);
-    this.connectionAttempts   = 3;
-    this.iteratorBufferSize   = 5;
-    this.proxy                = new Proxy.ProxyConfiguration();
+function getTime(){
+    var date  = new Date();
+    var hour  = date.getHours();        hour  = (hour  &lt; 10 ? "0" : "") + hour;
+    var min   = date.getMinutes();      min   = (min   &lt; 10 ? "0" : "") + min;
+    var sec   = date.getSeconds();      sec   = (sec   &lt; 10 ? "0" : "") + sec;
+    var msec  = date.getMilliseconds(); msec  = (msec  &lt; 10 ? "00" : (msec &lt; 100 ? "0" : "") ) + msec;
+    var year  = date.getFullYear();
+    var month = date.getMonth() + 1;    month = (month &lt; 10 ? "0" : "") + month;
+    var day   = date.getDate();         day   = (day   &lt; 10 ? "0" : "") + day;
+
+    return year + "-" + month + "-" + day + " " + hour + ":" + min + ":" + sec + "." + msec;
 }
 
-module.exports = Configuration;
+function setFile (file, callback) {
+    if (typeof file === 'string') {
+        if (!fs.existsSync(file)) {
+            var firstMessage = '[' + getTime() + '] [INIT] KVStore for node.js log system - file created\n';
+            fs.writeFile(file, firstMessage , function (err) {
+                if (err) {
+                    if (callback) callback(err);
+                    else throw err;
+                } else return file;
+            });
+        }
+        return file;
+    }
+}
 
+function verifyDebugLevel (logLevel) {
+    var result = 0;
+    if (typeof logLevel === 'string')
+        result = levels.levels.indexOf(logLevel);
+    else if (typeof logLevel === 'number')
+        result = logLevel;
+    
+    return result;
+}
+
+function log (logger, level, stringLevel, message, callback) {
+    if (logger.logLevel >= level ) {
+        if (typeof message !== 'string') {
+            message = JSON.stringify(message);
+        }
+        var logString = '[' + getTime() + '] ' + stringLevel + message + '\n';
+        if (logger.logToFile) {
+            fs.appendFile(logger.logFile, logString, function (err) {
+                if (err) {
+                    if (callback) callback(err);
+                    else throw err;
+                }
+            });
+        }
+        if (logger.logToConsole)
+            console.log(logString);
+    }
+}
+
+var levels = {
+    OFF    : 0,
+    FATAL  : 1,
+    ERROR  : 2,
+    WARN   : 3,
+    INFO   : 4,
+    DEBUG  : 5,
+    TRACE  : 6,
+    ALL    : 7,
+    levels : ['OFF', 'FATAL', 'ERROR', 'WARN', 'INFO', 'DEBUG', 'TRACE', 'ALL']
+}
+exports.LOG_LEVELS = levels;
+
+/**
+ * Creates a new Logger object
+ * @constructor
+ */
+function Logger (){
+    var conf = {};
+    if (fs.existsSync(CONFIG_FILE)){
+        conf = JSON.parse(fs.readFileSync(CONFIG_FILE));
+        if (conf) {
+            this.logLevel     = conf.logLevel;
+            this.logToFile    = conf.logToFile;
+            this.logFile      = conf.logFile;
+            this.logToConsole = conf.logToConsole;
+            return;
+        }
+    } else {
+        this.logLevel     = conf.logLevel     = levels.OFF;
+        this.logToFile    = conf.logToFile    = true;
+        this.logFile      = conf.logFile      = 'log.txt';
+        this.logToConsole = conf.logToConsole = false;
+        fs.writeFileSync(CONFIG_FILE, JSON.stringify(conf, null, 4));
+    }
+    this.LOG_LEVELS=levels;
+}
+exports.Logger = Logger;
+
+
+Logger.prototype.trace = function(message, callback) {
+    log(this, levels.TRACE, '[TRACE] ', message, callback);
+}
+
+Logger.prototype.debug = function(message, callback) {
+    log(this, levels.DEBUG, '[DEBUG] ', message, callback);
+}
+
+Logger.prototype.info = function(message, callback) {
+    log(this, levels.INFO,  '[INFO]  ', message, callback);
+}
+
+Logger.prototype.warn = function(message, callback) {
+    log(this, levels.WARN,  '[WARN]  ', message, callback);
+}
+
+Logger.prototype.error = function(message, callback) {
+    log(this, levels.ERROR, '[ERROR] ', message, callback);
+}
+
+Logger.prototype.fatal = function(message, callback) {
+    log(this, levels.FATAL, '[FATAL] ', message, callback);
+}
 </code></pre>
         </article>
     </section>

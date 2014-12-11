@@ -23,24 +23,32 @@
 
 
 
+
 <section>
 
 <header>
-    <h2>
     
-    </h2>
+        <h2>
+        
+        </h2>
+        
     
 </header>
 
 <article>
     <div class="container-overview">
     
+        
+
+        
+
+
+<dl class="details">
 
     
-        
 
-        
-<dl class="details">
+    
+
     
 
     
@@ -72,8 +80,6 @@
         
     
     </div>
-
-    
 
     
 
@@ -91,225 +97,6 @@
         <dl>
             
 <dt>
-    <h4 class="name" id="Consistency"><span class="type-signature"></span>Consistency<span class="type-signature"> :number</span></h4>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        Used to provide consistency guarantees for read operations.In general, read operations may be serviced either at a Master or Replica node. When serviced at the Master node,consistency is always absolute. If absolute consistency is required, ABSOLUTE may be specified to force theoperation to be serviced at the Master. For other types of consistency, when the operation is serviced at aReplica node, the transaction will not begin until the consistency policy is satisfied.The Consistency is specified as an argument to all read operations, for example, get.
-    </div>
-    
-
-    
-        <h5>Type:</h5>
-        <ul>
-            <li>
-                
-<span class="param-type">number</span>
-
-
-            </li>
-        </ul>
-    
-
-    
-<dl class="details">
-    
-
-        <h5 class="subsection-title">Properties:</h5>
-
-        <dl>
-
-<table class="props">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>ABSOLUTE</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">A consistency policy that requires that a transaction be serviced on the Master so thatconsistency is absolute.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>NONE_REQUIRED</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">A consistency policy that lets a transaction on a replica using this policyproceed regardless of the state of the Replica relative to the Master.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>NONE_REQUIRED_NO_MASTER</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">A consistency policy that requires that a read operation be serviced ona replica; never the Master.</td>
-        </tr>
-
-    
-    </tbody>
-</table></dl>
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line121">line 121</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="FieldRange"><span class="type-signature"></span>FieldRange<span class="type-signature"></span></h4>
-
-    
-</dt>
-<dd>
-    
-    <div class="description">
-        FieldRange defines a range of values to be used in a table or index iteration or multiGet operation.A FieldRange is used as the least significant component in a partially specified PrimaryKey or IndexKey in orderto create a value range for an operation that returns multiple rows or keys. The data types supported by FieldRangeare limited to those which are valid for primary keys and/or index keys.
-    </div>
-    
-
-    
-
-    
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line255">line 255</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-</dd>
-
-        
-            
-<dt>
     <h4 class="name" id="ReplicaAckPolicy"><span class="type-signature"></span>ReplicaAckPolicy<span class="type-signature"> :number</span></h4>
 
     
@@ -317,7 +104,9 @@
 <dd>
     
     <div class="description">
-        A replicated environment makes it possible to increase an application's transaction commit guarantees bycommitting changes to its replicas on the network. ReplicaAckPolicy defines the policy for how such networkcommits are handled.
+        A replicated environment makes it possible to increase an application's transaction commit guarantees by
+committing changes to its replicas on the network. ReplicaAckPolicy defines the policy for how such network
+commits are handled.
     </div>
     
 
@@ -334,12 +123,11 @@
     
 
     
-<dl class="details">
-    
 
-        <h5 class="subsection-title">Properties:</h5>
 
-        <dl>
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
 
 <table class="props">
     <thead>
@@ -402,7 +190,8 @@
 
             
 
-            <td class="description last">No transaction commit acknowledgments are required and the master will never waitfor replica acknowledgments.</td>
+            <td class="description last">No transaction commit acknowledgments are required and the master will never wait
+for replica acknowledgments.</td>
         </tr>
 
     
@@ -425,12 +214,22 @@
 
             
 
-            <td class="description last">A simple majority of replicas must acknowledge that they have committedthe transaction.</td>
+            <td class="description last">A simple majority of replicas must acknowledge that they have committed
+the transaction.</td>
         </tr>
 
     
     </tbody>
-</table></dl>
+</table>
+</dl>
+
+
+
+<dl class="details">
+
+    
+
+    
 
     
 
@@ -453,7 +252,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line94">line 94</a>
+        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line95">line 95</a>
     </li></ul></dd>
     
 
@@ -480,7 +279,9 @@
 <dd>
     
     <div class="description">
-        Specifies whether to return the row value, version, both or neither.For best performance, it is important to choose only the properties that are required.The store is optimized to avoid I/O when the requested properties are in cache.
+        Specifies whether to return the row value, version, both or neither.
+For best performance, it is important to choose only the properties that are required.
+The store is optimized to avoid I/O when the requested properties are in cache.
     </div>
     
 
@@ -497,12 +298,11 @@
     
 
     
-<dl class="details">
-    
 
-        <h5 class="subsection-title">Properties:</h5>
 
-        <dl>
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
 
 <table class="props">
     <thead>
@@ -616,7 +416,16 @@
 
     
     </tbody>
-</table></dl>
+</table>
+</dl>
+
+
+
+<dl class="details">
+
+    
+
+    
 
     
 
@@ -639,7 +448,186 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line192">line 192</a>
+        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line190">line 190</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    <h4 class="name" id="SimpleConsistency"><span class="type-signature"></span>SimpleConsistency<span class="type-signature"> :number</span></h4>
+
+    
+</dt>
+<dd>
+    
+    <div class="description">
+        Used to provide consistency guarantees for read operations.
+In general, read operations may be serviced either at a Master or Replica node. When serviced at the Master node,
+consistency is always absolute. If absolute consistency is required, ABSOLUTE may be specified to force the
+operation to be serviced at the Master. For other types of consistency, when the operation is serviced at a
+Replica node, the transaction will not begin until the consistency policy is satisfied.
+The Consistency is specified as an argument to all read operations, for example, get.
+    </div>
+    
+
+    
+        <h5>Type:</h5>
+        <ul>
+            <li>
+                
+<span class="param-type">number</span>
+
+
+            </li>
+        </ul>
+    
+
+    
+
+
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
+
+<table class="props">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>ABSOLUTE</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A consistency policy that requires that a transaction be serviced on the Master so that
+consistency is absolute.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>NONE_REQUIRED</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A consistency policy that lets a transaction on a replica using this policy
+proceed regardless of the state of the Replica relative to the Master.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>NONE_REQUIRED_NO_MASTER</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">A consistency policy that requires that a read operation be serviced on
+a replica; never the Master.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+</dl>
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line122">line 122</a>
     </li></ul></dd>
     
 
@@ -666,7 +654,8 @@
 <dd>
     
     <div class="description">
-        Defines the synchronization policy to be used when committing a transaction. High levels of synchronizationoffer a greater guarantee that the transaction is persistent to disk, but trade that off for lower performance.
+        Defines the synchronization policy to be used when committing a transaction. High levels of synchronization
+offer a greater guarantee that the transaction is persistent to disk, but trade that off for lower performance.
     </div>
     
 
@@ -683,12 +672,11 @@
     
 
     
-<dl class="details">
-    
 
-        <h5 class="subsection-title">Properties:</h5>
 
-        <dl>
+    <h5 class="subsection-title">Properties:</h5>
+
+    <dl>
 
 <table class="props">
     <thead>
@@ -779,7 +767,16 @@
 
     
     </tbody>
-</table></dl>
+</table>
+</dl>
+
+
+
+<dl class="details">
+
+    
+
+    
 
     
 
@@ -802,7 +799,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line104">line 104</a>
+        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line105">line 105</a>
     </li></ul></dd>
     
 
@@ -828,16 +825,20 @@
         <dl>
             
 <dt>
-    <h4 class="name" id="newDurability"><span class="type-signature"></span>newDurability<span class="signature">(masterSync, replicaSync, replicaAck)</span><span class="type-signature"> &rarr; {<a href="Durability.html">Durability</a>}</span></h4>
+    
+        <h4 class="name" id="readProxyConfiguration"><span class="type-signature"></span>readProxyConfiguration<span class="signature">(filename)</span><span class="type-signature"> &rarr; {<a href="ProxyConfiguration.html">ProxyConfiguration</a>}</span></h4>
 
+        
     
 </dt>
 <dd>
 
     
     <div class="description">
-        One step Durability constructor.
+        Tries to read a file with a ProxyConfiguration object
     </div>
+    
+
     
 
     
@@ -870,13 +871,13 @@
 
         <tr>
             
-                <td class="name"><code>masterSync</code></td>
+                <td class="name"><code>filename</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#ReplicaAckPolicy">ReplicaAckPolicy</a></span>
+<span class="param-type">string</span>
 
 
             
@@ -886,53 +887,7 @@
 
             
 
-            <td class="description last">The transaction synchronization policy to be used on the Master whencommitting a transaction.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>replicaSync</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="global.html#ReplicaAckPolicy">ReplicaAckPolicy</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The replica acknowledgment policy used by the master when committingchanges to a replicated environment.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>replicaAck</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="global.html#SyncPolicy">SyncPolicy</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The transaction synchronization policy to be used by the replica as it replaysa transaction that needs an acknowledgment.</td>
+            <td class="description last">the full path for the file</td>
         </tr>
 
     
@@ -941,7 +896,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -963,7 +925,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line156">line 156</a>
+        <a href="Proxy.js.html">Proxy.js</a>, <a href="Proxy.js.html#line162">line 162</a>
     </li></ul></dd>
     
 
@@ -997,7 +959,7 @@
     </dt>
     <dd>
         
-<span class="param-type"><a href="Durability.html">Durability</a></span>
+<span class="param-type"><a href="ProxyConfiguration.html">ProxyConfiguration</a></span>
 
 
     </dd>
@@ -1011,16 +973,20 @@
         
             
 <dt>
-    <h4 class="name" id="newFieldRange"><span class="type-signature"></span>newFieldRange<span class="signature">(fieldName, startValue, startIsInclusive, endValue, endIsInclusive)</span><span class="type-signature"> &rarr; {<a href="global.html#FieldRange">FieldRange</a>}</span></h4>
+    
+        <h4 class="name" id="startProxy"><span class="type-signature"></span>startProxy<span class="signature">(proxyConfiguration, callback)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
 
     
     <div class="description">
-        One step FieldRange constructor
+        starts a proxy with the given configuration
     </div>
+    
+
     
 
     
@@ -1053,13 +1019,13 @@
 
         <tr>
             
-                <td class="name"><code>fieldName</code></td>
+                <td class="name"><code>proxyConfiguration</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">String</span>
+<span class="param-type"><a href="ProxyConfiguration.html">ProxyConfiguration</a></span>
 
 
             
@@ -1069,17 +1035,22 @@
 
             
 
-            <td class="description last">The name for the field used in the range.</td>
+            <td class="description last">the configuration used to start the proxy</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>startValue</code></td>
+                <td class="name"><code>callback</code></td>
             
 
             <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
             
             </td>
 
@@ -1087,61 +1058,7 @@
 
             
 
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>startIsInclusive</code></td>
-            
-
-            <td class="type">
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>endValue</code></td>
-            
-
-            <td class="type">
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>endIsInclusive</code></td>
-            
-
-            <td class="type">
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
+            <td class="description last">function called after the proxy is started</td>
         </tr>
 
     
@@ -1150,7 +1067,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -1172,7 +1096,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line232">line 232</a>
+        <a href="Proxy.js.html">Proxy.js</a>, <a href="Proxy.js.html#line216">line 216</a>
     </li></ul></dd>
     
 
@@ -1195,24 +1119,6 @@
     
 
     
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="global.html#FieldRange">FieldRange</a></span>
-
-
-    </dd>
-</dl>
-
-        
 
     
 </dd>
@@ -1220,16 +1126,20 @@
         
             
 <dt>
-    <h4 class="name" id="newReadOptions"><span class="type-signature"></span>newReadOptions<span class="signature">(consistency, timeout)</span><span class="type-signature"> &rarr; {<a href="ReadOptions.html">ReadOptions</a>}</span></h4>
+    
+        <h4 class="name" id="stopProxy"><span class="type-signature"></span>stopProxy<span class="signature">(proxyConfiguration, callback)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
 
     
     <div class="description">
-        One step ReadOptions constructor.
+        Shutdown the proxy. If a proxy was started, this method will shutdown it.
     </div>
+    
+
     
 
     
@@ -1262,13 +1172,13 @@
 
         <tr>
             
-                <td class="name"><code>consistency</code></td>
+                <td class="name"><code>proxyConfiguration</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#Consistency">Consistency</a></span>
+<span class="param-type"><a href="ProxyConfiguration.html">ProxyConfiguration</a></span>
 
 
             
@@ -1278,20 +1188,20 @@
 
             
 
-            <td class="description last">the consistency to be used</td>
+            <td class="description last">the configuration used to start the proxy</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>timeout</code></td>
+                <td class="name"><code>callback</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Number</span>
+<span class="param-type">function</span>
 
 
             
@@ -1301,7 +1211,7 @@
 
             
 
-            <td class="description last">the timeout to be used</td>
+            <td class="description last">function called after trying to shutdown the proxy</td>
         </tr>
 
     
@@ -1310,7 +1220,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -1332,279 +1249,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line130">line 130</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="ReadOptions.html">ReadOptions</a></span>
-
-
-    </dd>
-</dl>
-
-        
-
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="newWriteOptions"><span class="type-signature"></span>newWriteOptions<span class="signature">(durability, returnChoice, timeoutMs)</span><span class="type-signature"> &rarr; {<a href="WriteOptions.html">WriteOptions</a>}</span></h4>
-
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        One step WriteOptions constructor
-    </div>
-    
-
-    
-
-    
-
-    
-        <h5>Parameters:</h5>
-        
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>durability</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="Durability.html">Durability</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Defines the durability characteristics associated with a standalone write(put or update) operation</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>returnChoice</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="global.html#ReturnChoice">ReturnChoice</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Specifies whether to return the row value, version, both or neither.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>timeoutMs</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">Number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">The upper bound on the time interval for processing the operation.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-    
-
-    
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line203">line 203</a>
-    </li></ul></dd>
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="WriteOptions.html">WriteOptions</a></span>
-
-
-    </dd>
-</dl>
-
-        
-
-    
-</dd>
-
-        
-            
-<dt>
-    <h4 class="name" id="put"><span class="type-signature"></span>put<span class="signature">()</span><span class="type-signature"></span></h4>
-
-    
-</dt>
-<dd>
-
-    
-    <div class="description">
-        Create a Put operation suitable for use as an argument to the execute method. The semantics of the returned operation are identical to that of the connection.put() method.
-    </div>
-    
-
-    
-
-    
-
-    
-
-    
-<dl class="details">
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-    <dt class="tag-source">Source:</dt>
-    <dd class="tag-source"><ul class="dummy"><li>
-        <a href="TableOperations.js.html">TableOperations.js</a>, <a href="TableOperations.js.html#line65">line 65</a>
+        <a href="Proxy.js.html">Proxy.js</a>, <a href="Proxy.js.html#line289">line 289</a>
     </li></ul></dd>
     
 
@@ -1647,13 +1292,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="Configuration.html">Configuration</a></li><li><a href="Durability.html">Durability</a></li><li><a href="ReadOptions.html">ReadOptions</a></li><li><a href="SecurityProperties.html">SecurityProperties</a></li><li><a href="Store.html">Store</a></li><li><a href="WriteOptions.html">WriteOptions</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Consistency">Consistency</a></li><li><a href="global.html#FieldRange">FieldRange</a></li><li><a href="global.html#newDurability">newDurability</a></li><li><a href="global.html#newFieldRange">newFieldRange</a></li><li><a href="global.html#newReadOptions">newReadOptions</a></li><li><a href="global.html#newWriteOptions">newWriteOptions</a></li><li><a href="global.html#put">put</a></li><li><a href="global.html#ReplicaAckPolicy">ReplicaAckPolicy</a></li><li><a href="global.html#ReturnChoice">ReturnChoice</a></li><li><a href="global.html#SyncPolicy">SyncPolicy</a></li></ul>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="Configuration.html">Configuration</a></li><li><a href="Durability.html">Durability</a></li><li><a href="FieldRange.html">FieldRange</a></li><li><a href="Iterator.html">Iterator</a></li><li><a href="Logger.html">Logger</a></li><li><a href="Operation.html">Operation</a></li><li><a href="ProxyConfiguration.html">ProxyConfiguration</a></li><li><a href="Readable.html">Readable</a></li><li><a href="ReadOptions.html">ReadOptions</a></li><li><a href="SecurityProperties.html">SecurityProperties</a></li><li><a href="Store.html">Store</a></li><li><a href="VerifyProperties.html">VerifyProperties</a></li><li><a href="WriteOptions.html">WriteOptions</a></li></ul><h3>Global</h3><ul><li><a href="global.html#readProxyConfiguration">readProxyConfiguration</a></li><li><a href="global.html#ReplicaAckPolicy">ReplicaAckPolicy</a></li><li><a href="global.html#ReturnChoice">ReturnChoice</a></li><li><a href="global.html#SimpleConsistency">SimpleConsistency</a></li><li><a href="global.html#startProxy">startProxy</a></li><li><a href="global.html#stopProxy">stopProxy</a></li><li><a href="global.html#SyncPolicy">SyncPolicy</a></li></ul>
 </nav>
 
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-alpha9</a> on Sat Sep 06 2014 14:26:51 GMT-0500 (CDT)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-alpha10</a> on Mon Dec 01 2014 16:17:12 GMT-0600 (CST)
 </footer>
 
 <script> prettyPrint(); </script>

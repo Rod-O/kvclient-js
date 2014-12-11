@@ -40,39 +40,37 @@
  * berkeleydb-info_us@oracle.com
  *
  */
-"use strict"
+"use strict";
 
-global.path            = require("path");
-global.fs              = require("fs");
-global.assert          = require("assert");
-global.util            = require("util");
+global.path         = require("path");
+global.fs           = require("fs");
+global.assert       = require("assert");
+global.util         = require("util");
+global.thrift       = require('thrift');
+global.kvmodule_dir = __dirname;
 
-global.thrift          = require('thrift');
-
-global.Errors          = require('./lib/Errors');
-
-global.kvmodule_dir    = __dirname;
-
+var Errors        = require('./lib/Errors');
 var Store         = require('./lib/Store.js');
 var Types         = require('./lib/Types.js');
 var Configuration = require('./lib/Configuration.js');
 var Logger        = require('./lib/Logger.js');
 var Proxy         = require('./lib/Proxy.js');
 
-global.kvLogger          = new Logger.Logger();
-global.Types             = Types;
+global.Errors     = Errors;
+global.kvLogger   = new Logger.Logger();
+global.Types      = Types;
+global.LOG_LEVELS = Logger.LOG_LEVELS;
 
-global.proxyConfiguration   = new Proxy.ProxyConfiguration();
-global.LOG_LEVELS           = Logger.LOG_LEVELS;
-exports.Types               = Types;
-exports.Configuration       = Configuration;
-exports.proxyConfiguration  = proxyConfiguration;
-exports.Proxy               = Proxy;
+exports.Errors    = Errors;
+exports.Types     = Types;
+exports.Proxy     = Proxy;
+
+exports.Configuration = Configuration;
 
 /**
  * Establish a connection with a KVStore server configuring and starting a local proxy.
  */
 exports.createStore = function createStore(configuration) {
+    if (typeof configuration === 'undefined') configuration = new Configuration();
     return new Store(configuration);
-}
-
+};

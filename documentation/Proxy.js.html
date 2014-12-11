@@ -1,4 +1,32 @@
-/*-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: Source: Proxy.js</title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+
+<body>
+
+<div id="main">
+
+    <h1 class="page-title">Source: Proxy.js</h1>
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/*-
  *
  *  This file is part of Oracle NoSQL Database
  *  Copyright (C) 2011, 2014 Oracle and/or its affiliates.  All rights reserved.
@@ -26,9 +54,9 @@
  * You should have received a copy of the GNU Affero General Public License
  * and/or the Apache License in the LICENSE file along with Oracle NoSQL
  * Database client or server distribution.  If not, see
- * <http://www.gnu.org/licenses/>
+ * &lt;http://www.gnu.org/licenses/>
  * or
- * <http://www.apache.org/licenses/LICENSE-2.0>.
+ * &lt;http://www.apache.org/licenses/LICENSE-2.0>.
  *
  * An active Oracle commercial licensing agreement for this product supersedes
  * these licenses and in such case the license notices, but not the copyright
@@ -95,9 +123,14 @@ function getStoreFlag(store) {
 
 
 function getProxyClasspath(proxyConfiguration) {
-    return " -cp " +
-        path.normalize(proxyConfiguration.KVCLIENT_JAR) + (process.platform==='win32'?";":":") +
-        path.normalize(proxyConfiguration.PROXY_HOME + '/kvproxy.jar');
+    var separator = (process.platform==='win32'?";":":");
+    return  " -cp " +
+            path.normalize(proxyConfiguration.PROXY_HOME + '/kvproxy.jar')                 + separator +
+            path.normalize(proxyConfiguration.PROXY_HOME + '/lib/libthrift-0.9.1.jar')     + separator +
+            path.normalize(proxyConfiguration.KVCLIENT_JAR)                                + separator +
+            path.normalize(proxyConfiguration.PROXY_HOME + '/lib/slf4j-log4j12-1.5.8.jar') + separator +
+            path.normalize(proxyConfiguration.PROXY_HOME + '/lib/log4j-1.2.14.jar')        + separator +
+            path.normalize(proxyConfiguration.PROXY_HOME + '/lib/slf4j-api-1.5.8.jar');
 }
 
 /**
@@ -105,17 +138,15 @@ function getProxyClasspath(proxyConfiguration) {
  * no parameters, once this object is created feel free to change any parameter.
  * @property {boolean} startProxy indicates if the module should try to start a proxy instance from which it will
  * connect to a NoSQL Server
- * @property {String} host indicates the host:port for a proxy to connect, not used when
+ * @property {string} host indicates the host:port for a proxy to connect, not used when 
  * startProxy = true
- * @property {String} KVCLIENT_JAR the path where the file kvclient.jar is located, required to start a local proxy
- * @property {String} PROXY_HOME the path where the proxy files are located, by default they are located in this module
+ * @property {string} KVCLIENT_JAR the path where the file kvclient.jar is located, required to start a local proxy
+ * @property {string} PROXY_HOME the path where the proxy files are located, by default they are located in this module
  * path, but a different value can be specified to start a local proxy with different binaries
  * @property {String} kvStoreName the store name to be used
  * @property {String|Array} kvStoreHelperHosts the helper hosts to be used by the proxy when connecting to a NoSQL Server
  * @property {String|Array} readZones the read zones to be used by the proxy when connecting to a NoSQL Server
- * @property {String|SecurityProperties} security used for the connection, this can be a string with the full path
- * of a file containing the required security properties, or can be a SecurityProperties object with all the required
- * properties, use null to avoid security properties.
+ * @property {SecurityProperties} securityProperties used for the connection
  * @property {Number} requestTimeout a number in milliseconds to specify the timeout default value for a request
  * @property {Number} socketOpenTimeout a number in milliseconds to specify the timeout for the socket to connect
  * @property {Number} socketReadTimeout a number in milliseconds to specify the timeout for the socket to read
@@ -125,12 +156,12 @@ function ProxyConfiguration () {
     this.startProxy         = false;
     this.host               = "localhost:5010";
     this.KVCLIENT_JAR       = process.env.KVSTORE_HOME_DIR + "/dist/lib/kvclient.jar";
-    this.PROXY_HOME         = path.normalize(kvmodule_dir + "/kvproxy/");
+    this.PROXY_HOME         = path.normalize(kvmodule_dir + "/proxy/");
     this.kvStoreName        = "kvstore";
     this.kvStoreHelperHosts = "localhost:5000";
     this.readZones          = "";
     this.username           = "";
-    this.security           = null;
+    this.securityProperties = new Types.SecurityProperties();
     this.requestTimeout     = 1000;  //todo: send this parameter to the proxy
     this.socketOpenTimeout  = 1000;  //todo: send this parameter to the proxy
     this.socketReadTimeout  = 1000;  //todo: send this parameter to the proxy
@@ -150,53 +181,6 @@ function validateConfiguration (/*ProxyConfiguration*/ conf) {
     if (typeof conf.socketReadTimeout === 'undefined') throw new Error(Errors.ERROR_IN_PARAMETER + "socketReadTimeout");
 }
 exports.validateConfiguration = validateConfiguration;
-
-/**
- * Object to define the security properties to be used when starting a proxy in order to connect to a secured store,
- * if a property is not intended to be used it must be set to null.
- * @property {String} SECURITY_FILE
- * @property {String} TRANSPORT
- * @property {String} SSL_TRANSPORT_NAME
- * @property {String} SSL_CIPHER_SUITES
- * @property {String} SSL_PROTOCOLS
- * @property {String} SSL_HOSTNAME_VERIFIER
- * @property {String} SSL_TRUSTSTORE_FILE
- * @property {String} SSL_TRUSTSTORE_TYPE
- * @property {String} AUTH_USERNAME
- * @property {String} AUTH_WALLET
- * @property {String} AUTH_PWDFILE
- * @constructor
- */
-function SecurityProperties() {
-    // this.SECURITY_FILE = null;
-    this.TRANSPORT = "ssl";
-    //this.SSL_TRANSPORT_NAME = null;
-    //this.SSL_CIPHER_SUITES = null;
-    this.SSL_PROTOCOLS = "TLSv1.2,TLSv1.1,TLSv1";
-    this.SSL_HOSTNAME_VERIFIER = "dnmatch(CN\\=NoSQL)";
-    this.SSL_TRUSTSTORE_FILE = process.env.KVROOT + "/security/client.trust";
-    //this.SSL_TRUSTSTORE_TYPE = null;
-    this.AUTH_USERNAME = "root";
-    //this.AUTH_WALLET = null;
-    this.AUTH_PWDFILE = process.env.KVROOT + "/security/login.passwd";
-}
-exports.SecurityProperties = SecurityProperties;
-
-var SecurityPropertiesMap = {
-    //SECURITY_FILE: null,
-    TRANSPORT : "oracle.kv.transport",
-    //SSL_TRANSPORT_NAME : null,
-    //SSL_CIPHER_SUITES : null,
-    SSL_PROTOCOLS : "oracle.kv.ssl.protocols",
-    SSL_HOSTNAME_VERIFIER : "oracle.kv.ssl.hostnameVerifier",
-    SSL_TRUSTSTORE_FILE : "oracle.kv.ssl.trustStore",
-    //SSL_TRUSTSTORE_TYPE : null,
-    AUTH_USERNAME : "oracle.kv.auth.username",
-    //AUTH_WALLET : null
-    AUTH_PWDFILE : "oracle.kv.auth.pwdfile.file",
-};
-
-
 
 /**
  * Tries to read a file with a ProxyConfiguration object
@@ -276,32 +260,15 @@ function startProxy (proxyConfiguration, callback) {
             path.normalize(kvmodule_dir + '/proxy/log4j.ini');
         var storeFlag = getStoreFlag(proxyConfiguration.kvStoreName);
 
-        var securityFlag = "";
-        var securityFile = "/tmp/security";
-        if (proxyConfiguration.security) {
-            if (typeof proxyConfiguration.security !== "string") {
-                fs.writeFileSync(securityFile, '');
-                for (var key in proxyConfiguration.security) {
-                    fs.appendFileSync(securityFile, SecurityPropertiesMap[key] + "=" + proxyConfiguration.security[key] + "\n");
-                }
-                fs.chmodSync(securityFile, '777');
-            } else {
-                securityFile = proxyConfiguration.security;
-            }
-            securityFlag = " -security " + securityFile;
-            kvLogger.debug('[PROXY] Using security properties from: ' + securityFile);
-        }
-
         var commandLine =
-            'nohup java ' +
+            'java ' +
             logConfiguration +
             jarClasspath +
             ' oracle.kv.proxy.KVProxy ' +
             hostsFlag +
             portFlag +
             storeFlag +
-            securityFlag +
-            ' &';
+            ' &amp;';
 
         kvLogger.debug('[PROXY] Launch proxy cmd: ' + commandLine);
         fs.writeFileSync(launchFile, commandLine);
@@ -322,7 +289,6 @@ function startProxy (proxyConfiguration, callback) {
         });
         proxy.on('exit', function(code){
             if (fs.existsSync(launchFile)) fs.unlinkSync(launchFile);
-
             if (fs.existsSync(PID_FILE)) {
                 proxyPid = fs.readFileSync(PID_FILE);
                 fs.unlinkSync(PID_FILE);
@@ -372,4 +338,26 @@ function stopProxy (proxyConfiguration, callback) {
     });
 }
 
-exports.stopProxy = stopProxy;
+exports.stopProxy = stopProxy;</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<nav>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="Configuration.html">Configuration</a></li><li><a href="Durability.html">Durability</a></li><li><a href="FieldRange.html">FieldRange</a></li><li><a href="Iterator.html">Iterator</a></li><li><a href="Logger.html">Logger</a></li><li><a href="Operation.html">Operation</a></li><li><a href="ProxyConfiguration.html">ProxyConfiguration</a></li><li><a href="Readable.html">Readable</a></li><li><a href="ReadOptions.html">ReadOptions</a></li><li><a href="SecurityProperties.html">SecurityProperties</a></li><li><a href="Store.html">Store</a></li><li><a href="VerifyProperties.html">VerifyProperties</a></li><li><a href="WriteOptions.html">WriteOptions</a></li></ul><h3>Global</h3><ul><li><a href="global.html#readProxyConfiguration">readProxyConfiguration</a></li><li><a href="global.html#ReplicaAckPolicy">ReplicaAckPolicy</a></li><li><a href="global.html#ReturnChoice">ReturnChoice</a></li><li><a href="global.html#SimpleConsistency">SimpleConsistency</a></li><li><a href="global.html#startProxy">startProxy</a></li><li><a href="global.html#stopProxy">stopProxy</a></li><li><a href="global.html#SyncPolicy">SyncPolicy</a></li></ul>
+</nav>
+
+<br clear="both">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-alpha10</a> on Mon Dec 01 2014 16:17:12 GMT-0600 (CST)
+</footer>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

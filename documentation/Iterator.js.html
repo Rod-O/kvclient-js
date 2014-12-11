@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: Configuration.js</title>
+    <title>JSDoc: Source: Iterator.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: Configuration.js</h1>
+    <h1 class="page-title">Source: Iterator.js</h1>
 
     
 
@@ -71,29 +71,139 @@
 "use strict";
 
 /*global kvLogger*/
+/*global LOG_LEVELS*/
+/*global Errors*/
 /*global Types*/
 
-var Proxy  = require('./Proxy.js');
+var EventEmitter    = require('events').EventEmitter;
+util.inherits(Iterator, EventEmitter);
+
 
 /**
- * Defines a set of configuration values used to connect to an Oracle NoSQL Database, this is just the constructor with
- * no parameters, once this object is created feel free to change any parameter.
- * @property {Consistency} defaultConsistency indicates the consistency used by default
- * @property {Durability} defaultDurability indicates the durability used by default
- * @property {Number} connectionAttempts the number of attempts to do when trying to connect to a server
- * @property {Proxy.ProxyConfiguration} proxyConfiguration the proxy configuration to connect to a server
+ * Creates an iterator based on  
+ * @param kvClient
+ * @param iteratorResult
  * @constructor
  */
-function Configuration () {
-    this.defaultConsistency   = Types.Consistency.ABSOLUTE;
-    this.defaultDurability    = new Types.Durability(Types.SyncPolicy.NO_SYNC, Types.ReplicaAckPolicy.ALL, Types.SyncPolicy.NO_SYNC);
-    this.connectionAttempts   = 3;
-    this.iteratorBufferSize   = 5;
-    this.proxy                = new Proxy.ProxyConfiguration();
+function Iterator(/*kvClient*/ kvClient, /*TIteratorResult*/ iteratorResult) {
+    EventEmitter.call(this);
+    var self  = this;
+    var iteratorId = iteratorResult.iteratorId;
+    var closed = false;
+    var buffer = iteratorResult.result.rowsWithMetadata;
+    var hasMore = iteratorResult.hasMore;
+    var index, length;
+    var buffering = false;
+    resetIndexes();
+
+    function resetIndexes() {
+        index = 0;
+        length = buffer.length - 1;
+    }
+    function parseRow(row) {
+        if (row)
+            if (row.jsonRow) {
+                row.row = JSON.parse(row.jsonRow);
+                delete row.jsonRow;
+            }
+        return row;
+    }
+
+    //function available() {
+    //    return (length>=index || hasMore) &amp;&amp; !buffering;
+    //}
+    //this.available = available;
+
+    function isClosed() {
+        return closed;
+    }
+    this.isClosed = isClosed;
+
+    function next(callback) {
+        callback = callback || function(){};
+        if (closed) {
+            callback(new Error(Errors.ITERATOR_CLOSED));
+        }
+        if (length>=index) {  //available from buffer
+            parseRow(buffer[index]);
+            callback(null, buffer[index++]);
+            return;
+        }
+        if (hasMore) {
+            buffering = true;
+            kvClient.iteratorNext(iteratorId, function (err, result) {
+                if (result != null) {
+                    buffer = result.result.rowsWithMetadata;
+                    resetIndexes();
+                    parseRow(buffer[index]);
+                    callback(null, buffer[index]);
+                    index++;
+                }
+            });
+        }
+        callback(new Error(Errors.NO_MORE_ELEMENTS));
+        self.emit("finish");
+    }
+    this.next = next;
+
+    function getCurrent(callback) {
+        kvLogger.debug("Iterator - getCurrent");
+        var _index = index-1;
+        if (closed) {
+            callback(new Error(Errors.ITERATOR_CLOSED));
+            return;
+        }
+        parseRow(buffer[_index]);
+        if (length>=_index)
+            callback(null, buffer[_index]);
+    };
+    this.getCurrent = getCurrent;
+
+    function forEach(callback) {
+        kvLogger.debug("Iterator - forEach");
+        if (closed) {
+            callback(new Error(Errors.ITERATOR_CLOSED));
+            return;
+        }
+        var lastEntry = false;
+        while(true) { //depleting buffer
+            if (length>=index) {
+                parseRow(buffer[index]);
+                callback(null, buffer[index++]);
+            } else if (hasMore) {
+                kvClient.iteratorNext(iteratorId, function (err, result) {
+                    if (result != null) {
+                        buffer = result.result.rowsWithMetadata;
+                        hasMore = result.hasMore;
+                        resetIndexes();
+                        forEach(callback);
+                    }
+                });
+                break;
+            } else {
+                lastEntry = true;
+                break;
+            }
+
+        }
+        if (lastEntry)  // means this is the last entry, no more items available
+            self.emit("finish");
+    }
+    this.forEach = forEach;
+
+    function close(callback) {
+        kvLogger.debug("Iterator - close");
+        if (closed) {
+            callback(new Error(Errors.ITERATOR_CLOSED));
+            return;
+        }
+        kvClient.iteratorClose(iteratorId, callback);
+    }
+    this.close = close;
+
 }
 
-module.exports = Configuration;
-
+module.exports = Iterator;
 </code></pre>
         </article>
     </section>

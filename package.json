@@ -1,15 +1,15 @@
 {
     "name"        : "kvclient-js",
 
-    "version"     : "0.0.1",
+    "version"     : "0.0.7",
 
     "description" : "Oracle NoSQL Database node.js Client API.",
 
-    "keywords"    : ["kvstore", "nosql", "db", "sleepycat" ],
+    "keywords"    : ["kvstore", "nosql", "db", "sleepycat", "bigdata" ],
 
-    "homepage"    : "http://github.com/oracle/kvstore/",
+    "homepage"    : "http://github.com/Rod-O/kvclient-js/",
 
-    "bugs"        : { "url" : "http://github.com/oracle/kvclient-js/issues"},
+    "bugs"        : { "url" : "http://github.com/Rod-O/kvclient-js/issues"},
 
     "license"    : "Apache-2.0",
 
@@ -18,7 +18,7 @@
     "main"        : "kvclient",
 
     "dependencies": {
-        "thrift": ">=0.9.1",
+        "thrift": ">=0.9.2",
         "node-int64": "~0.3.0",
         "q": "1.0.x",
         "nodeunit": "~0.8.0"
@@ -29,7 +29,7 @@
 
     "repository"  : {
             "type"    : "git",
-            "url"     : "https://github.com/oracle/kvclient-js.git"
+            "url"     : "https://github.com/Rod-O/kvclient-js.git"
     }
 }
 

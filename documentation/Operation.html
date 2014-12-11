@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: WriteOptions</title>
+    <title>JSDoc: Class: Operation</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: WriteOptions</h1>
+    <h1 class="page-title">Class: Operation</h1>
 
     
 
@@ -29,7 +29,7 @@
 <header>
     
         <h2>
-        WriteOptions
+        Operation
         </h2>
         
     
@@ -41,7 +41,7 @@
         
 <dt>
     
-        <h4 class="name" id="WriteOptions"><span class="type-signature"></span>new WriteOptions<span class="signature">(durability, returnChoice, timeoutMs)</span><span class="type-signature"> &rarr; {<a href="WriteOptions.html">WriteOptions</a>}</span></h4>
+        <h4 class="name" id="Operation"><span class="type-signature"></span>new Operation<span class="signature">(tableName, type, row, returnChoice, abortIfUnsuccessful, matchVersion)</span><span class="type-signature"></span></h4>
 
         
     
@@ -50,8 +50,7 @@
 
     
     <div class="description">
-        WriteOptions is passed to store operations that can update the store to specify non-default behavior relating
-to operation durability and timeouts.
+        Defines an update operation to be passed to Store.executeOperations().
     </div>
     
 
@@ -87,13 +86,13 @@ to operation durability and timeouts.
 
         <tr>
             
-                <td class="name"><code>durability</code></td>
+                <td class="name"><code>tableName</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Durability.html">Durability</a></span>
+<span class="param-type">String</span>
 
 
             
@@ -103,8 +102,54 @@ to operation durability and timeouts.
 
             
 
-            <td class="description last">Defines the durability characteristics associated with a standalone write
-(put or update) operation</td>
+            <td class="description last">The table name on which this operation is executed on.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">OperationType</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Determines which update operation to be executed.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>row</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Row</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">For put operations: represents the row to be stored.
+For delete operations: represents the key of the row to be deleted.</td>
         </tr>
 
     
@@ -134,13 +179,13 @@ to operation durability and timeouts.
 
         <tr>
             
-                <td class="name"><code>timeoutMs</code></td>
+                <td class="name"><code>abortIfUnsuccessful</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Number</span>
+<span class="param-type">Bool</span>
 
 
             
@@ -150,7 +195,32 @@ to operation durability and timeouts.
 
             
 
-            <td class="description last">The upper bound on the time interval for processing the operation.</td>
+            <td class="description last">True if this operation should cause the execute transaction to abort
+when the operation fails, where failure is the condition when the
+delete or put method returns null.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>matchVersion</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Version</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The version to be matched for: putIfVersion and deleteIfVersion.</td>
         </tr>
 
     
@@ -187,13 +257,13 @@ to operation durability and timeouts.
 
         <tr>
             
-                <td class="name"><code>durability</code></td>
+                <td class="name"><code>tableName</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Durability.html">Durability</a></span>
+<span class="param-type">String</span>
 
 
             
@@ -203,8 +273,54 @@ to operation durability and timeouts.
 
             
 
-            <td class="description last">Defines the durability characteristics associated with a standalone
-write (put or update) operation</td>
+            <td class="description last">The table name on which this operation is executed on.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>type</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">OperationType</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Determines which update operation to be executed.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>row</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Row</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">For put operations: represents the row to be stored.
+For delete operations: represents the key of the row to be deleted.</td>
         </tr>
 
     
@@ -234,13 +350,13 @@ write (put or update) operation</td>
 
         <tr>
             
-                <td class="name"><code>timeoutMs</code></td>
+                <td class="name"><code>abortIfUnsuccessful</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Number</span>
+<span class="param-type">Bool</span>
 
 
             
@@ -250,7 +366,32 @@ write (put or update) operation</td>
 
             
 
-            <td class="description last">The upper bound on the time interval for processing the operation.</td>
+            <td class="description last">True if this operation should cause the execute transaction to abort
+when the operation fails, where failure is the condition when the
+delete or put method returns null.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>matchVersion</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Version</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The version to be matched for: putIfVersion and deleteIfVersion.</td>
         </tr>
 
     
@@ -287,7 +428,7 @@ write (put or update) operation</td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line208">line 208</a>
+        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line316">line 316</a>
     </li></ul></dd>
     
 
@@ -310,24 +451,6 @@ write (put or update) operation</td>
     
 
     
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="WriteOptions.html">WriteOptions</a></span>
-
-
-    </dd>
-</dl>
-
-        
 
     
 </dd>

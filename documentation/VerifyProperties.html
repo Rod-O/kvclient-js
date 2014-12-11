@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Class: WriteOptions</title>
+    <title>JSDoc: Class: VerifyProperties</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Class: WriteOptions</h1>
+    <h1 class="page-title">Class: VerifyProperties</h1>
 
     
 
@@ -29,7 +29,7 @@
 <header>
     
         <h2>
-        WriteOptions
+        VerifyProperties
         </h2>
         
     
@@ -41,7 +41,7 @@
         
 <dt>
     
-        <h4 class="name" id="WriteOptions"><span class="type-signature"></span>new WriteOptions<span class="signature">(durability, returnChoice, timeoutMs)</span><span class="type-signature"> &rarr; {<a href="WriteOptions.html">WriteOptions</a>}</span></h4>
+        <h4 class="name" id="VerifyProperties"><span class="type-signature"></span>new VerifyProperties<span class="signature">(kvStoreName, kvStoreHelperHosts, username)</span><span class="type-signature"></span></h4>
 
         
     
@@ -50,8 +50,7 @@
 
     
     <div class="description">
-        WriteOptions is passed to store operations that can update the store to specify non-default behavior relating
-to operation durability and timeouts.
+        Structure to verify a connection to a KV Server
     </div>
     
 
@@ -87,13 +86,13 @@ to operation durability and timeouts.
 
         <tr>
             
-                <td class="name"><code>durability</code></td>
+                <td class="name"><code>kvStoreName</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Durability.html">Durability</a></span>
+<span class="param-type">String</span>
 
 
             
@@ -103,21 +102,20 @@ to operation durability and timeouts.
 
             
 
-            <td class="description last">Defines the durability characteristics associated with a standalone write
-(put or update) operation</td>
+            <td class="description last">must match the store name of the KVProxy server</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>returnChoice</code></td>
+                <td class="name"><code>kvStoreHelperHosts</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#ReturnChoice">ReturnChoice</a></span>
+<span class="param-type">Array</span>
 
 
             
@@ -127,20 +125,21 @@ to operation durability and timeouts.
 
             
 
-            <td class="description last">Specifies whether to return the row value, version, both or neither.</td>
+            <td class="description last">list must have at least one entry and all entries
+must be contained in the list that the server was started with.</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>timeoutMs</code></td>
+                <td class="name"><code>username</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Number</span>
+<span class="param-type">String</span>
 
 
             
@@ -150,7 +149,7 @@ to operation durability and timeouts.
 
             
 
-            <td class="description last">The upper bound on the time interval for processing the operation.</td>
+            <td class="description last">the security username, required for secured stores</td>
         </tr>
 
     
@@ -187,13 +186,13 @@ to operation durability and timeouts.
 
         <tr>
             
-                <td class="name"><code>durability</code></td>
+                <td class="name"><code>kvStoreName</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="Durability.html">Durability</a></span>
+<span class="param-type">String</span>
 
 
             
@@ -203,21 +202,20 @@ to operation durability and timeouts.
 
             
 
-            <td class="description last">Defines the durability characteristics associated with a standalone
-write (put or update) operation</td>
+            <td class="description last">must match the store name of the KVProxy server</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>returnChoice</code></td>
+                <td class="name"><code>kvStoreHelperHosts</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type"><a href="global.html#ReturnChoice">ReturnChoice</a></span>
+<span class="param-type">Array</span>
 
 
             
@@ -227,20 +225,21 @@ write (put or update) operation</td>
 
             
 
-            <td class="description last">Specifies whether to return the row value, version, both or neither.</td>
+            <td class="description last">list must have at least one entry and all entries
+must be contained in the list that the server was started with.</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>timeoutMs</code></td>
+                <td class="name"><code>username</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Number</span>
+<span class="param-type">String</span>
 
 
             
@@ -250,7 +249,7 @@ write (put or update) operation</td>
 
             
 
-            <td class="description last">The upper bound on the time interval for processing the operation.</td>
+            <td class="description last">the security username, required for secured stores</td>
         </tr>
 
     
@@ -287,7 +286,7 @@ write (put or update) operation</td>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line208">line 208</a>
+        <a href="Types.js.html">Types.js</a>, <a href="Types.js.html#line265">line 265</a>
     </li></ul></dd>
     
 
@@ -310,24 +309,6 @@ write (put or update) operation</td>
     
 
     
-    <h5>Returns:</h5>
-    
-            
-
-
-<dl>
-    <dt>
-        Type
-    </dt>
-    <dd>
-        
-<span class="param-type"><a href="WriteOptions.html">WriteOptions</a></span>
-
-
-    </dd>
-</dl>
-
-        
 
     
 </dd>

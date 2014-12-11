@@ -2,18 +2,20 @@ verbose
 table clear -all
 #plan remove-table -name t1 -wait
 #plan remove-table -name t2 -wait
+#plan remove-table -name t3 -wait
 #plan remove-table -name p1.c1 -wait
 #plan remove-table -name p1.c2 -wait
 #plan remove-table -name p1 -wait
 
-
 # a very simple table
 table create -name t1
 add-field -name id -type INTEGER
+add-field -name sid -type INTEGER
 add-field -name a -type STRING
 primary-key -field id
 exit
 plan add-table -name t1 -wait
+plan add-index -name t1_idx -table t1 -field sid -wait
 
 
 # a table with all the types
@@ -33,6 +35,23 @@ table create -name t2
     primary-key -field id
     exit
 plan add-table -name t2 -wait
+plan add-index -name t2_idx -table t2 -field f -wait
+
+
+# a table with indexes
+table create -name t3
+add-field -name shardKey -type INTEGER
+add-field -name id -type INTEGER
+add-field -name indexKey1 -type INTEGER
+add-field -name s -type STRING
+add-field -name indexKey2 -type STRING
+primary-key -field shardKey -field id
+shard-key   -field shardKey
+exit
+plan add-table -name t3 -wait
+
+plan add-index -name t3_i1_idx -table t3 -field indexKey1 -wait
+plan add-index -name t3_i2_idx -table t3 -field indexKey2 -wait
 
 
 # parent and children tables
@@ -61,7 +80,5 @@ primary-key -field idc2
 exit
 plan add-table -name p1.c2 -wait
 
+
 show tables
-
-
-

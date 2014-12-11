@@ -23,24 +23,27 @@
 
 
 
+
 <section>
 
 <header>
-    <h2>
-    Store
-    </h2>
+    
+        <h2>
+        Store
+        </h2>
+        
     
 </header>
 
 <article>
     <div class="container-overview">
     
-
-    
         
 <dt>
-    <h4 class="name" id="Store"><span class="type-signature"></span>new Store<span class="signature">(configuration)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="Store"><span class="type-signature"></span>new Store<span class="signature">(configuration)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
@@ -49,6 +52,8 @@
     <div class="description">
         Store constructor
     </div>
+    
+
     
 
     
@@ -106,7 +111,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -128,7 +140,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line62">line 62</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line68">line 68</a>
     </li></ul></dd>
     
 
@@ -157,8 +169,6 @@
 
     
     </div>
-
-    
 
     
 
@@ -178,15 +188,17 @@
         <dl>
             
 <dt>
-    <h4 class="name" id="close"><span class="type-signature"></span>close<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="close"><span class="type-signature"></span>close<span class="signature">()</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
 
     
     <div class="description">
-        Closes the connection. If a proxy was started, this method will shutdown it.
+        Closes the connection.
     </div>
     
 
@@ -197,7 +209,16 @@
     
 
     
+
+    
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -219,7 +240,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line192">line 192</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line197">line 197</a>
     </li></ul></dd>
     
 
@@ -249,8 +270,10 @@
         
             
 <dt>
-    <h4 class="name" id="deleteRow"><span class="type-signature"></span>deleteRow<span class="signature">(table, primaryKey, writeOptions, callback)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="deleteRow"><span class="type-signature"></span>deleteRow<span class="signature">(tableName, primaryKey, writeOptions, callback)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
@@ -266,6 +289,8 @@
     
 
     
+
+    
         <h5>Parameters:</h5>
         
 
@@ -291,7 +316,7 @@
 
         <tr>
             
-                <td class="name"><code>table</code></td>
+                <td class="name"><code>tableName</code></td>
             
 
             <td class="type">
@@ -353,7 +378,8 @@
 
             
 
-            <td class="description last">non-default arguments controlling the Durability of the operation,or null to get default behaviour.</td>
+            <td class="description last">non-default arguments controlling the Durability of the operation,
+or null to get default behaviour.</td>
         </tr>
 
     
@@ -385,7 +411,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -407,7 +440,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line450">line 450</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line442">line 442</a>
     </li></ul></dd>
     
 
@@ -437,8 +470,10 @@
         
             
 <dt>
-    <h4 class="name" id="deleteRowIfVersion"><span class="type-signature"></span>deleteRowIfVersion<span class="signature">(table, primaryKey, matchVersion, writeOptions, callback)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="deleteRowIfVersion"><span class="type-signature"></span>deleteRowIfVersion<span class="signature">(tableName, primaryKey, matchVersion, writeOptions, callback)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
@@ -454,6 +489,8 @@
     
 
     
+
+    
         <h5>Parameters:</h5>
         
 
@@ -479,7 +516,7 @@
 
         <tr>
             
-                <td class="name"><code>table</code></td>
+                <td class="name"><code>tableName</code></td>
             
 
             <td class="type">
@@ -531,7 +568,7 @@
             <td class="type">
             
                 
-<span class="param-type">Version</span>
+<span class="param-type">Buffer</span>
 
 
             
@@ -564,7 +601,8 @@
 
             
 
-            <td class="description last">non-default arguments controlling the Durability of the operation,or null to get default behaviour.</td>
+            <td class="description last">non-default arguments controlling the Durability of the operation,
+or null to get default behaviour.</td>
         </tr>
 
     
@@ -596,7 +634,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -618,7 +663,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line477">line 477</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line472">line 472</a>
     </li></ul></dd>
     
 
@@ -648,16 +693,21 @@
         
             
 <dt>
-    <h4 class="name" id="execute"><span class="type-signature"></span>execute<span class="signature">(operations, writeOptions, callback)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="execute"><span class="type-signature"></span>execute<span class="signature">(statement, callback)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
 
     
     <div class="description">
-        This method provides an efficient and transactional mechanism for executing a sequence of operations associatedwith tables that share the same shard key portion of their primary keys. The efficiency results from the useof a single network interaction to accomplish the entire sequence of operations.The operations passed to this method are created using an TableOperationFactory instance,which is obtained from the getTableOperationFactory() method.
+        Executes a table statement. Currently, table statements
+can be used to create or modify tables and indices.
     </div>
+    
+
     
 
     
@@ -690,13 +740,13 @@
 
         <tr>
             
-                <td class="name"><code>operations</code></td>
+                <td class="name"><code>statement</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">Array</span>
+<span class="param-type">String</span>
 
 
             
@@ -706,30 +756,7 @@
 
             
 
-            <td class="description last">the list of operations to be performed. Note that all operations in the list must specify primary keys with the same complete shard key.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>writeOptions</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type"><a href="WriteOptions.html">WriteOptions</a></span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">non-default arguments controlling the Durability of the operation,or null to get default behaviour.</td>
+            <td class="description last">the statement to be performed.</td>
         </tr>
 
     
@@ -761,7 +788,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -783,7 +817,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line530">line 530</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line728">line 728</a>
     </li></ul></dd>
     
 
@@ -813,8 +847,669 @@
         
             
 <dt>
-    <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(table, primaryKey, readOptions, callback)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="executeAsync"><span class="type-signature"></span>executeAsync<span class="signature">(statement, callback)</span><span class="type-signature"></span></h4>
 
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Executes a table statement in the server asynchronously.
+Currently, table statements can be used to create or modify tables and indices.
+The operation is asynchronous in server side and may not be finished when
+the method call the callback function.
+
+A execution identifier is returned and can be used to get
+information about the status of the operation.
+
+If the statement is for an administrative command, and the store is
+currently executing an administrative command that is the logical
+equivalent the action specified by the statement, the method will
+return a execution identifier that serves as a handle to that
+operation, rather than starting a new invocation of the command.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>statement</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the statement to be performed.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">a function that is called when the process finish.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line758">line 758</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    
+        <h4 class="name" id="executeCallback"><span class="type-signature"></span>executeCallback<span class="signature">()</span><span class="type-signature"></span></h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Callback until the command represented by a execution identifier completes.
+Returns information about the execution of the statement.
+This call will result in communication with the kvstore server.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line796">line 796</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    
+        <h4 class="name" id="executeCancel"><span class="type-signature"></span>executeCancel<span class="signature">(statement, callback)</span><span class="type-signature"></span></h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Attempts to cancel execution of a statement, execution identifier
+of the statement must be provided. Return false if the
+statement couldn't be cancelled, possibly because it has already
+finished. If the statement hasn't succeeded already, and can be stopped,
+the operation will transition to the FAILED state.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>statement</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the statement to be performed.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">a function that is called when the process finish.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line779">line 779</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    
+        <h4 class="name" id="executeOperations"><span class="type-signature"></span>executeOperations<span class="signature">()</span><span class="type-signature"></span></h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        This method provides an efficient and transactional mechanism for
+executing a sequence of operations associated with tables that share
+the same shard key portion of their primary keys.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line849">line 849</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    
+        <h4 class="name" id="executeStatus"><span class="type-signature"></span>executeStatus<span class="signature">()</span><span class="type-signature"></span></h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Returns information about the execution of the statement. If the
+statement is still executing, this call will result in communication
+with the kvstore server to obtain up to date status, and the status
+returned will reflect interim information.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line831">line 831</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    
+        <h4 class="name" id="executeTimeout"><span class="type-signature"></span>executeTimeout<span class="signature">()</span><span class="type-signature"></span></h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Callback until the command represented by a execution identifier completes
+or the timeout period is exceeded.
+This call will result in communication with the kvstore server.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line813">line 813</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    
+        <h4 class="name" id="get"><span class="type-signature"></span>get<span class="signature">(tableName, primaryKey, readOptions, callback)</span><span class="type-signature"></span></h4>
+
+        
     
 </dt>
 <dd>
@@ -830,6 +1525,8 @@
     
 
     
+
+    
         <h5>Parameters:</h5>
         
 
@@ -855,7 +1552,7 @@
 
         <tr>
             
-                <td class="name"><code>table</code></td>
+                <td class="name"><code>tableName</code></td>
             
 
             <td class="type">
@@ -949,7 +1646,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -971,7 +1675,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line208">line 208</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line223">line 223</a>
     </li></ul></dd>
     
 
@@ -1001,16 +1705,23 @@
         
             
 <dt>
-    <h4 class="name" id="multiDelete"><span class="type-signature"></span>multiDelete<span class="signature">(table, primaryKey, multiRowOptions, writeOptions, callback)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="indexIterator"><span class="type-signature"></span>indexIterator<span class="signature">(tableName, indexName, primaryKey, fieldRange, includedTables, readOptions, direction, callback)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
 
     
     <div class="description">
-        Deletes multiple rows from a table in an atomic operation. The key used may be partial but must containall of the fields that are in the shard key.
+        Returns an iterator over the rows associated with an index key. This method requires an additional database read
+on the server side to get row information for matching rows. Ancestor table rows for matching index rows may be
+returned as well if specified in the getOptions paramter. Index operations may not specify the return of child
+table rows.
     </div>
+    
+
     
 
     
@@ -1043,7 +1754,1189 @@
 
         <tr>
             
-                <td class="name"><code>table</code></td>
+                <td class="name"><code>tableName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the table name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>indexName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the index name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>primaryKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the primary key for a table. It must be a complete primary key, with all fields set.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fieldRange</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="FieldRange.html">FieldRange</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The FieldRange to be used to restrict the range of the operation.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includedTables</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The list of tables to be included in an operation that returns
+multiple rows or keys.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>readOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ReadOptions.html">ReadOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">non-default options for the operation or null to get default behavior.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Direction</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Direction for this operation. If the primary key contains a complete shard key
+both Direction.FORWARD and Direction.REVERSE are allowed.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">a function that is called when the process finish.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line629">line 629</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    
+        <h4 class="name" id="indexKeyIterator"><span class="type-signature"></span>indexKeyIterator<span class="signature">(tableName, indexName, primaryKey, fieldRange, includedTables, readOptions, direction, callback)</span><span class="type-signature"></span></h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Return the keys for matching rows associated with an index key. The iterator returned only references
+information directly available from the index. No extra fetch operations are performed. Ancestor table keys
+for matching index keys may be returned as well if specified in the getOptions paramter. Index operations
+may not specify the return of child table keys.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tableName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the table name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>indexName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the index name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>primaryKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the primary key for a table. It must be a complete primary key, with all fields set.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fieldRange</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="FieldRange.html">FieldRange</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The FieldRange to be used to restrict the range of the operation.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includedTables</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The list of tables to be included in an operation that returns
+multiple rows or keys.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>readOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ReadOptions.html">ReadOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">non-default options for the operation or null to get default behavior.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Direction</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Direction for this operation. If the primary key contains a complete shard key
+both Direction.FORWARD and Direction.REVERSE are allowed.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">a function that is called when the process finish.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line676">line 676</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    
+        <h4 class="name" id="indexKeyStream"><span class="type-signature"></span>indexKeyStream<span class="signature">(tableName, indexName, primaryKey, fieldRange, includedTables, readOptions, direction, callback)</span><span class="type-signature"></span></h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Return a Readable Stream with the keys for matching rows associated with an index key. The Stream returned only references
+information directly available from the index. No extra fetch operations are performed. Ancestor table keys
+for matching index keys may be returned as well if specified in the getOptions paramter. Index operations
+may not specify the return of child table keys.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tableName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the table name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>indexName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the index name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>primaryKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the primary key for a table. It must be a complete primary key, with all fields set.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fieldRange</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="FieldRange.html">FieldRange</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The FieldRange to be used to restrict the range of the operation.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includedTables</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The list of tables to be included in an operation that returns
+multiple rows or keys.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>readOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ReadOptions.html">ReadOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">non-default options for the operation or null to get default behavior.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Direction</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Direction for this operation. If the primary key contains a complete shard key
+both Direction.FORWARD and Direction.REVERSE are allowed.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">a function that is called when the process finish.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line1016">line 1016</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    
+        <h4 class="name" id="indexStream"><span class="type-signature"></span>indexStream<span class="signature">(tableName, indexName, primaryKey, fieldRange, includedTables, readOptions, direction, callback)</span><span class="type-signature"></span></h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Returns a Readable Stream over the rows associated with an index key. This method requires an additional database read
+on the server side to get row information for matching rows. Ancestor table rows for matching index rows may be
+returned as well if specified in the getOptions paramter. Index operations may not specify the return of child
+table rows.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tableName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the table name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>indexName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the index name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>primaryKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the primary key for a table. It must be a complete primary key, with all fields set.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fieldRange</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="FieldRange.html">FieldRange</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The FieldRange to be used to restrict the range of the operation.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includedTables</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The list of tables to be included in an operation that returns
+multiple rows or keys.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>readOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ReadOptions.html">ReadOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">non-default options for the operation or null to get default behavior.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Direction</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Direction for this operation. If the primary key contains a complete shard key
+both Direction.FORWARD and Direction.REVERSE are allowed.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">a function that is called when the process finish.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line969">line 969</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    
+        <h4 class="name" id="multiDelete"><span class="type-signature"></span>multiDelete<span class="signature">(tableName, primaryKey, fieldRange, includedTables, writeOptions, callback)</span><span class="type-signature"></span></h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Deletes multiple rows from a table in an atomic operation. The key used may be partial but must contain
+all of the fields that are in the shard key.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tableName</code></td>
             
 
             <td class="type">
@@ -1089,13 +2982,13 @@
 
         <tr>
             
-                <td class="name"><code>multiRowOptions</code></td>
+                <td class="name"><code>fieldRange</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">MultiRowOptions</span>
+<span class="param-type"><a href="FieldRange.html">FieldRange</a></span>
 
 
             
@@ -1105,7 +2998,31 @@
 
             
 
-            <td class="description last">a MultiRowOptions object used to control ranges in the operation andwhether ancestor and descendant tables are included in the results. It may be null. The table used to constructthe primaryKey parameter is always included as a target.</td>
+            <td class="description last">The FieldRange to be used to restrict the range of the operation.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includedTables</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The list of tables to be included in an operation that returns
+multiple rows or keys.</td>
         </tr>
 
     
@@ -1128,7 +3045,8 @@
 
             
 
-            <td class="description last">non-default arguments controlling the Durability of the operation,or null to get default behaviour.</td>
+            <td class="description last">non-default arguments controlling the Durability of the operation,
+or null to get default behaviour.</td>
         </tr>
 
     
@@ -1160,7 +3078,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -1182,7 +3107,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line508">line 508</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line506">line 506</a>
     </li></ul></dd>
     
 
@@ -1212,16 +3137,21 @@
         
             
 <dt>
-    <h4 class="name" id="multiGet"><span class="type-signature"></span>multiGet<span class="signature">(table, primaryKey, multiRowOptions, readOptions, callback)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="multiGet"><span class="type-signature"></span>multiGet<span class="signature">(tableName, primaryKey, fieldRange, includedTables, readOptions, callback)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
 
     
     <div class="description">
-        Returns the rows associated with a partial primary key in an atomic manner. Rows are returned in primary key order.The key used must ontain all of the fields defined for the table's shard key.
+        Returns the rows associated with a partial primary key in an atomic manner. Rows are returned in primary key order.
+The key used must ontain all of the fields defined for the table's shard key.
     </div>
+    
+
     
 
     
@@ -1254,7 +3184,7 @@
 
         <tr>
             
-                <td class="name"><code>table</code></td>
+                <td class="name"><code>tableName</code></td>
             
 
             <td class="type">
@@ -1300,13 +3230,13 @@
 
         <tr>
             
-                <td class="name"><code>multiRowOptions</code></td>
+                <td class="name"><code>fieldRange</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">MultiRowOptions</span>
+<span class="param-type"><a href="FieldRange.html">FieldRange</a></span>
 
 
             
@@ -1316,7 +3246,31 @@
 
             
 
-            <td class="description last">a MultiRowOptions object used to control ranges in the operation andwhether ancestor and descendant tables are included in the results. It may be null. The table used to constructthe primaryKey parameter is always included as a target.</td>
+            <td class="description last">The FieldRange to be used to restrict the range of the operation.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includedTables</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The list of tables to be included in an operation that returns
+multiple rows or keys.</td>
         </tr>
 
     
@@ -1371,7 +3325,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -1393,7 +3354,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line242">line 242</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line255">line 255</a>
     </li></ul></dd>
     
 
@@ -1423,16 +3384,21 @@
         
             
 <dt>
-    <h4 class="name" id="multiGetKeys"><span class="type-signature"></span>multiGetKeys<span class="signature">(table, primaryKey, multiRowOptions, readOptions, callback)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="multiGetKeys"><span class="type-signature"></span>multiGetKeys<span class="signature">(tableName, primaryKey, fieldRange, includedTables, readOptions, callback)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
 
     
     <div class="description">
-        Return the rows associated with a partial primary key in an atomic manner. Keys are returned in primary key order.The key used must contain all of the fields defined for the table's shard key.
+        Return the rows associated with a partial primary key in an atomic manner. Keys are returned in primary key order.
+The key used must contain all of the fields defined for the table's shard key.
     </div>
+    
+
     
 
     
@@ -1465,7 +3431,7 @@
 
         <tr>
             
-                <td class="name"><code>table</code></td>
+                <td class="name"><code>tableName</code></td>
             
 
             <td class="type">
@@ -1511,13 +3477,13 @@
 
         <tr>
             
-                <td class="name"><code>multiRowOptions</code></td>
+                <td class="name"><code>fieldRange</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">MultiRowOptions</span>
+<span class="param-type"><a href="FieldRange.html">FieldRange</a></span>
 
 
             
@@ -1527,7 +3493,32 @@
 
             
 
-            <td class="description last">a MultiRowOptions object used to control ranges in the operation andwhether ancestor and descendant tables are included in the results. It may be null. The table used to constructthe primaryKey parameter is always included as a target.</td>
+            <td class="description last">The FieldRange to be used to restrict the range of the operation.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includedTables</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The list of tables to be included in an operation that returns
+multiple rows or keys.
+the primaryKey parameter is always included as a target.</td>
         </tr>
 
     
@@ -1582,7 +3573,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -1604,7 +3602,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line272">line 272</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line294">line 294</a>
     </li></ul></dd>
     
 
@@ -1634,16 +3632,22 @@
         
             
 <dt>
-    <h4 class="name" id="open"><span class="type-signature"></span>open<span class="signature">(callback)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="open"><span class="type-signature"></span>open<span class="signature">(callback)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
 
     
     <div class="description">
-        This methods opens a connection to a kvstore server, it tries to start a thrift proxy if this is not specifiedon configuration options. This process also calls the 'open' event in the listener protocol or 'error' if an erroroccurs during opening.
+        This methods opens a connection to a kvstore server, it tries to start a thrift proxy if this is not specified
+on configuration options. This process also calls the 'open' event in the listener protocol or 'error' if an error
+occurs during opening.
     </div>
+    
+
     
 
     
@@ -1692,7 +3696,8 @@
 
             
 
-            <td class="description last">calls this function when the process finishes, will return an error objectif the opening process fail.</td>
+            <td class="description last">calls this function when the process finishes, will return an error object
+if the opening process fail.</td>
         </tr>
 
     
@@ -1701,7 +3706,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -1723,7 +3735,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line130">line 130</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line141">line 141</a>
     </li></ul></dd>
     
 
@@ -1753,8 +3765,10 @@
         
             
 <dt>
-    <h4 class="name" id="put"><span class="type-signature"></span>put<span class="signature">(table, row, writeOptions, callback)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="put"><span class="type-signature"></span>put<span class="signature">(tableName, row, writeOptions, callback)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
@@ -1770,6 +3784,8 @@
     
 
     
+
+    
         <h5>Parameters:</h5>
         
 
@@ -1795,7 +3811,7 @@
 
         <tr>
             
-                <td class="name"><code>table</code></td>
+                <td class="name"><code>tableName</code></td>
             
 
             <td class="type">
@@ -1857,7 +3873,8 @@
 
             
 
-            <td class="description last">non-default arguments controlling the Durability of the operation,or null to get default behaviour.</td>
+            <td class="description last">non-default arguments controlling the Durability of the operation,
+or null to get default behaviour.</td>
         </tr>
 
     
@@ -1889,7 +3906,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -1911,7 +3935,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line340">line 340</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line328">line 328</a>
     </li></ul></dd>
     
 
@@ -1941,16 +3965,21 @@
         
             
 <dt>
-    <h4 class="name" id="putIfAbsent"><span class="type-signature"></span>putIfAbsent<span class="signature">(table, row, writeOptions, callback)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="putIfAbsent"><span class="type-signature"></span>putIfAbsent<span class="signature">(tableName, row, writeOptions, callback)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
 
     
     <div class="description">
-        Puts a row into a table, but only if the row does not exist. The row must contain a complete primary keyand all required fields.
+        Puts a row into a table, but only if the row does not exist. The row must contain a complete primary key
+and all required fields.
     </div>
+    
+
     
 
     
@@ -1983,7 +4012,7 @@
 
         <tr>
             
-                <td class="name"><code>table</code></td>
+                <td class="name"><code>tableName</code></td>
             
 
             <td class="type">
@@ -2045,7 +4074,8 @@
 
             
 
-            <td class="description last">non-default arguments controlling the Durability of the operation,or null to get default behaviour.</td>
+            <td class="description last">non-default arguments controlling the Durability of the operation,
+or null to get default behaviour.</td>
         </tr>
 
     
@@ -2077,7 +4107,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -2099,7 +4136,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line367">line 367</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line356">line 356</a>
     </li></ul></dd>
     
 
@@ -2129,16 +4166,21 @@
         
             
 <dt>
-    <h4 class="name" id="putIfPresent"><span class="type-signature"></span>putIfPresent<span class="signature">(table, row, writeOptions, callback)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="putIfPresent"><span class="type-signature"></span>putIfPresent<span class="signature">(tableName, row, writeOptions, callback)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
 
     
     <div class="description">
-        Puts a row into a table, but only if the row already exists. The row must contain a complete primary keyand all required fields.
+        Puts a row into a table, but only if the row already exists. The row must contain a complete primary key
+and all required fields.
     </div>
+    
+
     
 
     
@@ -2171,7 +4213,7 @@
 
         <tr>
             
-                <td class="name"><code>table</code></td>
+                <td class="name"><code>tableName</code></td>
             
 
             <td class="type">
@@ -2233,7 +4275,8 @@
 
             
 
-            <td class="description last">non-default arguments controlling the Durability of the operation,or null to get default behaviour.</td>
+            <td class="description last">non-default arguments controlling the Durability of the operation,
+or null to get default behaviour.</td>
         </tr>
 
     
@@ -2265,7 +4308,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -2287,7 +4337,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line394">line 394</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line384">line 384</a>
     </li></ul></dd>
     
 
@@ -2317,16 +4367,22 @@
         
             
 <dt>
-    <h4 class="name" id="putIfVersion"><span class="type-signature"></span>putIfVersion<span class="signature">(table, row, matchVersion, writeOptions, callback)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="putIfVersion"><span class="type-signature"></span>putIfVersion<span class="signature">(tableName, row, matchVersion, writeOptions, callback)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
 
     
     <div class="description">
-        Puts a row, but only if the version of the existing row matches the matchVersion argument. Used whenupdating a value to ensure that it has not changed since it was last read. The row must contain acomplete primary key and all required fields.
+        Puts a row, but only if the version of the existing row matches the matchVersion argument. Used when
+updating a value to ensure that it has not changed since it was last read. The row must contain a
+complete primary key and all required fields.
     </div>
+    
+
     
 
     
@@ -2359,7 +4415,7 @@
 
         <tr>
             
-                <td class="name"><code>table</code></td>
+                <td class="name"><code>tableName</code></td>
             
 
             <td class="type">
@@ -2411,7 +4467,7 @@
             <td class="type">
             
                 
-<span class="param-type">Version</span>
+<span class="param-type">Buffer</span>
 
 
             
@@ -2444,7 +4500,8 @@
 
             
 
-            <td class="description last">non-default arguments controlling the Durability of the operation,or null to get default behaviour.</td>
+            <td class="description last">non-default arguments controlling the Durability of the operation,
+or null to get default behaviour.</td>
         </tr>
 
     
@@ -2476,7 +4533,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -2498,7 +4562,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line423">line 423</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line414">line 414</a>
     </li></ul></dd>
     
 
@@ -2528,8 +4592,175 @@
         
             
 <dt>
-    <h4 class="name" id="tableIterator"><span class="type-signature"></span>tableIterator<span class="signature">(table, primaryKey, multiRowOptions, iterateOptions, callback)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="refreshTables"><span class="type-signature"></span>refreshTables<span class="signature">()</span><span class="type-signature"></span></h4>
 
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Refreshes cached information about the tables. This method is
+required before using any tables that had been modified.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line712">line 712</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    
+        <h4 class="name" id="shutdownProxy"><span class="type-signature"></span>shutdownProxy<span class="signature">()</span><span class="type-signature"></span></h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Attempt to shutdown the proxy related to the configuration of this Store
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line209">line 209</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    
+        <h4 class="name" id="tableIterator"><span class="type-signature"></span>tableIterator<span class="signature">(tableName, primaryKey, fieldRange, includedTables, readOptions, direction, callback)</span><span class="type-signature"></span></h4>
+
+        
     
 </dt>
 <dd>
@@ -2545,6 +4776,8 @@
     
 
     
+
+    
         <h5>Parameters:</h5>
         
 
@@ -2570,7 +4803,7 @@
 
         <tr>
             
-                <td class="name"><code>table</code></td>
+                <td class="name"><code>tableName</code></td>
             
 
             <td class="type">
@@ -2616,13 +4849,13 @@
 
         <tr>
             
-                <td class="name"><code>multiRowOptions</code></td>
+                <td class="name"><code>fieldRange</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">MultiRowOptions</span>
+<span class="param-type"><a href="FieldRange.html">FieldRange</a></span>
 
 
             
@@ -2632,20 +4865,20 @@
 
             
 
-            <td class="description last">a MultiRowOptions object used to control ranges in the operation andwhether ancestor and descendant tables are included in the results. It may be null. The table used to constructthe primaryKey parameter is always included as a target.</td>
+            <td class="description last">The FieldRange to be used to restrict the range of the operation.</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>iterateOptions</code></td>
+                <td class="name"><code>includedTables</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">TableIteratorOptions</span>
+<span class="param-type">Array</span>
 
 
             
@@ -2655,7 +4888,55 @@
 
             
 
-            <td class="description last">the non-default arguments for consistency of the operation and tocontrol the iteration or null to get default behaviour. The default Direction in TableIteratorOptions isDirection.UNORDERED. If the primary key contains a complete shard key both Direction.FORWARD andDirection.REVERSE are allowed.</td>
+            <td class="description last">The list of tables to be included in an operation that returns
+multiple rows or keys.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>readOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ReadOptions.html">ReadOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">non-default options for the operation or null to get default behavior.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Direction</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Direction for this operation. If the primary key contains a complete shard key
+both Direction.FORWARD and Direction.REVERSE are allowed.</td>
         </tr>
 
     
@@ -2687,7 +4968,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -2709,7 +4997,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line296">line 296</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line541">line 541</a>
     </li></ul></dd>
     
 
@@ -2739,8 +5027,10 @@
         
             
 <dt>
-    <h4 class="name" id="tableKeysIterator"><span class="type-signature"></span>tableKeysIterator<span class="signature">(table, primaryKey, multiRowOptions, iterateOptions, callback)</span><span class="type-signature"></span></h4>
+    
+        <h4 class="name" id="tableKeyIterator"><span class="type-signature"></span>tableKeyIterator<span class="signature">(tableName, primaryKey, fieldRange, includedTables, readOptions, direction, callback)</span><span class="type-signature"></span></h4>
 
+        
     
 </dt>
 <dd>
@@ -2749,6 +5039,8 @@
     <div class="description">
         Returns an iterator over the keys associated with a partial primary key.
     </div>
+    
+
     
 
     
@@ -2781,7 +5073,7 @@
 
         <tr>
             
-                <td class="name"><code>table</code></td>
+                <td class="name"><code>tableName</code></td>
             
 
             <td class="type">
@@ -2827,13 +5119,13 @@
 
         <tr>
             
-                <td class="name"><code>multiRowOptions</code></td>
+                <td class="name"><code>fieldRange</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">MultiRowOptions</span>
+<span class="param-type"><a href="FieldRange.html">FieldRange</a></span>
 
 
             
@@ -2843,20 +5135,20 @@
 
             
 
-            <td class="description last">a MultiRowOptions object used to control ranges in the operation andwhether ancestor and descendant tables are included in the results. It may be null. The table used to constructthe primaryKey parameter is always included as a target.</td>
+            <td class="description last">The FieldRange to be used to restrict the range of the operation.</td>
         </tr>
 
     
 
         <tr>
             
-                <td class="name"><code>iterateOptions</code></td>
+                <td class="name"><code>includedTables</code></td>
             
 
             <td class="type">
             
                 
-<span class="param-type">TableIteratorOptions</span>
+<span class="param-type">Array</span>
 
 
             
@@ -2866,7 +5158,55 @@
 
             
 
-            <td class="description last">the non-default arguments for consistency of the operation and tocontrol the iteration or null to get default behaviour. The default Direction in TableIteratorOptions isDirection.UNORDERED. If the primary key contains a complete shard key both Direction.FORWARD andDirection.REVERSE are allowed.</td>
+            <td class="description last">The list of tables to be included in an operation that returns
+multiple rows or keys.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>readOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ReadOptions.html">ReadOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">non-default options for the operation or null to get default behavior.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Direction</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Direction for this operation. If the primary key contains a complete shard key
+both Direction.FORWARD and Direction.REVERSE are allowed.</td>
         </tr>
 
     
@@ -2898,7 +5238,14 @@
     
 
     
+
+
 <dl class="details">
+
+    
+
+    
+
     
 
     
@@ -2920,7 +5267,547 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line320">line 320</a>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line584">line 584</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    
+        <h4 class="name" id="tableKeyStream"><span class="type-signature"></span>tableKeyStream<span class="signature">(tableName, primaryKey, fieldRange, includedTables, readOptions, direction, callback)</span><span class="type-signature"></span></h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Returns a Readable Stream over the keys associated with a partial primary key.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tableName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the table name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>primaryKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the primary key for a table. It must be a complete primary key, with all fields set.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fieldRange</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="FieldRange.html">FieldRange</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The FieldRange to be used to restrict the range of the operation.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includedTables</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The list of tables to be included in an operation that returns
+multiple rows or keys.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>readOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ReadOptions.html">ReadOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">non-default options for the operation or null to get default behavior.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Direction</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Direction for this operation. If the primary key contains a complete shard key
+both Direction.FORWARD and Direction.REVERSE are allowed.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">a function that is called when the process finish.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line924">line 924</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dd>
+
+        
+            
+<dt>
+    
+        <h4 class="name" id="tableStream"><span class="type-signature"></span>tableStream<span class="signature">(tableName, primaryKey, fieldRange, includedTables, readOptions, direction, callback)</span><span class="type-signature"></span></h4>
+
+        
+    
+</dt>
+<dd>
+
+    
+    <div class="description">
+        Returns a Readable Stream over the rows associated with a partial primary key.
+    </div>
+    
+
+    
+
+    
+
+    
+
+    
+        <h5>Parameters:</h5>
+        
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>tableName</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">String</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the table name</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>primaryKey</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">the primary key for a table. It must be a complete primary key, with all fields set.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>fieldRange</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="FieldRange.html">FieldRange</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The FieldRange to be used to restrict the range of the operation.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>includedTables</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Array</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The list of tables to be included in an operation that returns
+multiple rows or keys.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>readOptions</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type"><a href="ReadOptions.html">ReadOptions</a></span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">non-default options for the operation or null to get default behavior.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>direction</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">Direction</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The Direction for this operation. If the primary key contains a complete shard key
+both Direction.FORWARD and Direction.REVERSE are allowed.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">a function that is called when the process finish.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+    
+
+    
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="Store.js.html">Store.js</a>, <a href="Store.js.html#line881">line 881</a>
     </li></ul></dd>
     
 
@@ -2963,13 +5850,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="Configuration.html">Configuration</a></li><li><a href="Durability.html">Durability</a></li><li><a href="ReadOptions.html">ReadOptions</a></li><li><a href="SecurityProperties.html">SecurityProperties</a></li><li><a href="Store.html">Store</a></li><li><a href="WriteOptions.html">WriteOptions</a></li></ul><h3>Global</h3><ul><li><a href="global.html#Consistency">Consistency</a></li><li><a href="global.html#FieldRange">FieldRange</a></li><li><a href="global.html#newDurability">newDurability</a></li><li><a href="global.html#newFieldRange">newFieldRange</a></li><li><a href="global.html#newReadOptions">newReadOptions</a></li><li><a href="global.html#newWriteOptions">newWriteOptions</a></li><li><a href="global.html#put">put</a></li><li><a href="global.html#ReplicaAckPolicy">ReplicaAckPolicy</a></li><li><a href="global.html#ReturnChoice">ReturnChoice</a></li><li><a href="global.html#SyncPolicy">SyncPolicy</a></li></ul>
+    <h2><a href="index.html">Index</a></h2><h3>Classes</h3><ul><li><a href="Configuration.html">Configuration</a></li><li><a href="Durability.html">Durability</a></li><li><a href="FieldRange.html">FieldRange</a></li><li><a href="Iterator.html">Iterator</a></li><li><a href="Logger.html">Logger</a></li><li><a href="Operation.html">Operation</a></li><li><a href="ProxyConfiguration.html">ProxyConfiguration</a></li><li><a href="Readable.html">Readable</a></li><li><a href="ReadOptions.html">ReadOptions</a></li><li><a href="SecurityProperties.html">SecurityProperties</a></li><li><a href="Store.html">Store</a></li><li><a href="VerifyProperties.html">VerifyProperties</a></li><li><a href="WriteOptions.html">WriteOptions</a></li></ul><h3>Global</h3><ul><li><a href="global.html#readProxyConfiguration">readProxyConfiguration</a></li><li><a href="global.html#ReplicaAckPolicy">ReplicaAckPolicy</a></li><li><a href="global.html#ReturnChoice">ReturnChoice</a></li><li><a href="global.html#SimpleConsistency">SimpleConsistency</a></li><li><a href="global.html#startProxy">startProxy</a></li><li><a href="global.html#stopProxy">stopProxy</a></li><li><a href="global.html#SyncPolicy">SyncPolicy</a></li></ul>
 </nav>
 
 <br clear="both">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-alpha9</a> on Sat Sep 06 2014 14:26:51 GMT-0500 (CDT)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.3.0-alpha10</a> on Mon Dec 01 2014 16:17:12 GMT-0600 (CST)
 </footer>
 
 <script> prettyPrint(); </script>
